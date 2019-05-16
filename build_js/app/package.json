@@ -1,0 +1,16 @@
+{
+  "name": "MyChat_Client_Updater",
+  "productName": "MyChat Client Updater",
+  "version": "7.3.0",
+  "main": "./update.js",
+  "devDependencies": {
+    "electron" : "^1",
+    "adm-zip"  : "0.4.7",
+    "copy"     : "^1"
+  },
+  "dependencies": {
+    "gifer-console": "^1"
+  }
+}
+
+

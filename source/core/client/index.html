@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>MyChat Client</title>
+
+    <link rel="stylesheet" type="text/css" href="modules/frameworks/webix/codebase/skins/material.css">
+    <link rel="stylesheet" type="text/css" href="source/css/main.css">
+
+    <!--[if (lt IE 10)]>
+        <script type="text/javascript">
+            window.old_IE = true;
+        </script>
+    <![endif]-->
+
+</head>
+
+<body id="appBody">
+
+    <noscript>
+        <div class="noJS">
+            <h2>Please enable JavaScript in your browser!</h2>
+            <h2>Пожалуйста, включите JavaScript в вашем браузере!</h2>
+        </div>
+    </noscript>
+
+    <div id="loadingLabel" style="display: none;"><span id="loadingProgress">Loading&nbsp;0%</span><br>
+        <div class="mcIco"></div>
+    </div>
+
+    <script>
+        window.mcLoader = {
+            label     : document.getElementById("loadingLabel"),
+            indicator : document.getElementById("loadingProgress"),
+            progress  : 0
+        };
+
+        window.mcLoader.label.style.display = "block";
+    </script>
+
+    <div id="languageChanger"></div>
+
+    <script type="text/javascript" src="modules/mctools/loader.js"></script>
+
+</body>
+</html>

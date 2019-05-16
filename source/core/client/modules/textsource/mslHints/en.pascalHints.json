@@ -1,0 +1,1054 @@
+{
+    "!name": "pascal",
+
+    "DayOf": {
+        "!type": "fn() -> ",
+        "!doc" : "function DayOf(dt: double): integer; Get the day of the month from the date and time value",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdatedayof.htm"
+    },
+    "DayOfTheWeek": {
+        "!type": "fn() -> ",
+        "!doc" : "function DayOfTheWeek(dt: double): integer; Get the day of the week from the specified date",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdatedayoftheweek.htm"
+    },
+    "DaysBetween": {
+        "!type": "fn() -> ",
+        "!doc" : "function DaysBetween(dNow, dThen: double): integer; Calculate the number of whole days between two dates",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdatetimedaysbetween.htm"
+    },
+    "DecodeDate": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure DecodeDate(dt: double; var wYear, wMonth, wDay: word); Returns the year, month and day values from the date and time value",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdatedecodedate.htm"
+    },
+    "DecodeDateTime": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure DecodeDateTime(dt: double; var wYear, wMonth, wDay, wHour, wMinute, wSecond, wMilliSec: word); Returns the year, month, day, hour, minute, second and millisecond values from the date and time value",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdatedecodedatetime.htm"
+    },
+    "EncodeDate": {
+        "!type": "fn() -> ",
+        "!doc" : "function EncodeDate(wYear, wMonth, wDay: word): double; Calculate the date value from the year, month and day values",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdateencodedate.htm"
+    },
+    "EncodeDateTime": {
+        "!type": "fn() -> ",
+        "!doc" : "function EncodeDateTime(wYear, wMonth, wDay, wHour, wMinute, wSecond, wMilliSec: word): double; Calculate the date and time value from the year, month, day, hour, minute, second and millisecond values",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdateencodedatetime.htm"
+    },
+    "EndOfTheDay": {
+        "!type": "fn() -> ",
+        "!doc" : "function EndOfTheDay(dt: double): double; Get the date and time value of the end of the day from the specified date",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdateendoftheday.htm"
+    },
+    "FormatDateTime": {
+        "!type": "fn() -> ",
+        "!doc" : "function FormatDateTime(sFormat: string; dt: double): string; Converting the date and time value into the formatted text string",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdatetimeformatdatetime.htm"
+    },
+    "HourOf": {
+        "!type": "fn() -> ",
+        "!doc" : "function HourOf(dt: double): integer; Get the value of the hour from the date and time variable",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdatehourof.htm"
+    },
+    "HoursBetween": {
+        "!type": "fn() -> ",
+        "!doc" : "function HoursBetween(dNow, dThen: double): integer; Calculate how many whole hours between two specified dates",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdatetimehoursbetween.htm"
+    },
+    "IncDay": {
+        "!type": "fn() -> ",
+        "!doc" : "function IncDay(dt: double; iDays: int64): double; Add or subtract the number of days to the specified date",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdateincday.htm"
+    },
+    "IncHour": {
+        "!type": "fn() -> ",
+        "!doc" : "function IncHour(dt: double; iHours: int64): double; Add or subtract the number of hours to the specified date",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdateinchour.htm"
+    },
+    "IncMilliSecond": {
+        "!type": "fn() -> ",
+        "!doc" : "function IncMilliSecond(dt: double; iMilliSeconds: int64): double; Add or subtract the number of milliseconds to the specified date",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdateincmillisecond.htm"
+    },
+    "IncMinute": {
+        "!type": "fn() -> ",
+        "!doc" : "function IncMinute(dt: double; iMinutes: int64): double; Add or subtract the number of minutes to the specified date",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdateincminute.htm"
+    },
+    "IncMonth": {
+        "!type": "fn() -> ",
+        "!doc" : "function IncMonth(dt: double; iMonths: int64): double; Add or subtract the number of months to the specified date",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdateincmonth.htm"
+    },
+    "IncSecond": {
+        "!type": "fn() -> ",
+        "!doc" : "function IncSecond(dt: double; iSeconds: int64): double; Add or subtract the number of seconds to the specified date",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdateincsecond.htm"
+    },
+    "IncWeek": {
+        "!type": "fn() -> ",
+        "!doc" : "function IncWeek(dt: double; iWeeks: int64): double; Add or subtract the number of weeks to the specified date",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdateincweek.htm"
+    },
+    "IncYear": {
+        "!type": "fn() -> ",
+        "!doc" : "function IncYear(dt: double; iYears: int64): double; Add or subtract the number of years to the specified date",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdateincyear.htm"
+    },
+    "MilliSecondsBetween": {
+        "!type": "fn() -> ",
+        "!doc" : "function MilliSecondsBetween(dNow, dThen: double): integer; Calculate the number of milliseconds between two specified dates",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdatetimemillisecondsbetween.htm"
+    },
+    "MinuteOf": {
+        "!type": "fn() -> ",
+        "!doc" : "function MinuteOf(dt: double): integer; Get the value of minutes of the specified hour from the date and time value",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdateminuteof.htm"
+    },
+    "MonthOf": {
+        "!type": "fn() -> ",
+        "!doc" : "function MonthOf(dt: double): integer; Get the value of the month of the current year from the date and time value",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdatemonthof.htm"
+    },
+    "MonthsBetween": {
+        "!type": "fn() -> ",
+        "!doc" : "function MonthsBetween(dNow, dThen: double): integer; Calculate the number of whole months between two specified dates",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdatetimemonthsbetween.htm"
+    },
+    "Now": {
+        "!type": "fn() -> ",
+        "!doc" : "function Now: double; Get the local computer date and time value",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdatetimenow.htm"
+    },
+    "SecondOf": {
+        "!type": "fn() -> ",
+        "!doc" : "function SecondOf(dt: double): integer; Get the value of seconds of the specified minute from the date and time value",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdatesecondof.htm"
+    },
+    "SecondsBetween": {
+        "!type": "fn() -> ",
+        "!doc" : "function SecondsBetween(dNow, dThen: double): integer; Calculate the number whole seconds between two specified dates",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdatetimesecondsbetween.htm"
+    },
+    "StartOfTheDay": {
+        "!type": "fn() -> ",
+        "!doc" : "function StartOfTheDay(dt: double): double; the date and time value of the start of the day from the specified date",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdatestartoftheday.htm"
+    },
+    "WeekOf": {
+        "!type": "fn() -> ",
+        "!doc" : "function WeekOf(dt: double): integer; Get the value of the week from the date and time value",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdateweekof.htm"
+    },
+    "WeeksBetween": {
+        "!type": "fn() -> ",
+        "!doc" : "function WeeksBetween(dNow, dThen: double): integer; Calculate the number of whole weeks between two specified dates",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdatetimeweeksbetween.htm"
+    },
+    "YearOf": {
+        "!type": "fn() -> ",
+        "!doc" : "function YearOf(dt: double): integer; Get the value of the year from the date and time value",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdateyearof.htm"
+    },
+    "YearsBetween": {
+        "!type": "fn() -> ",
+        "!doc" : "function YearsBetween(dNow, dThen: double): integer; Calculate the number of whole years between two specified dates",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncdatetimeyearsbetween.htm"
+    },
+    "mGetConfNameByUID": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetConfNameByUID(iUID: integer): string; Get a text name of multi-user conference by its numeric identifier (UID)",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncconfmgetconfnamebyuid.htm"
+    },
+    "mIsUserIncludedToAutoConf": {
+        "!type": "fn() -> ",
+        "!doc" : "function mIsUserIncludedToAutoConf(iUIN, iUID: integer): boolean; Determine if a user is in the list of users which are added to the auto-created conference automatically",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncconfmisuserincludedtoautoconf.htm"
+    },
+    "Abs": {
+        "!type": "fn() -> ",
+        "!doc" : "function Abs(x: extended): extended; Get a modulus from a specified number (integer or real)",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmathabs.htm"
+    },
+    "Cos": {
+        "!type": "fn() -> ",
+        "!doc" : "function Cos(x: extended): extended; Compute the cosine value of the specified number in radians",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmathcos.htm"
+    },
+    "Exp": {
+        "!type": "fn() -> ",
+        "!doc" : "function Exp(x: extended): extended; Compute an exponent from a specified number",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmathexp.htm"
+    },
+    "Ln": {
+        "!type": "fn() -> ",
+        "!doc" : "function Ln(x: extended): extended; Compute the natural logarithm from a specified number",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmathln.htm"
+    },
+    "LogN": {
+        "!type": "fn() -> ",
+        "!doc" : "function LogN(Base, x: extended): extended; Compute the logarithm of X for a specified Base",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmathlogn.htm"
+    },
+    "Pi": {
+        "!type": "fn() -> ",
+        "!doc" : "function Pi: extended; Get the value of Pi",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmathpi.htm"
+    },
+    "Round": {
+        "!type": "fn() -> ",
+        "!doc" : "function Round(x: extended): integer; Rounding a floating-point number",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmathround.htm"
+    },
+    "Sin": {
+        "!type": "fn() -> ",
+        "!doc" : "function Sin(x: extended): extended; Compute the sine value in radians",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmathsin.htm"
+    },
+    "Trunc": {
+        "!type": "fn() -> ",
+        "!doc" : "function Trunc(x: extended): integer; Get an integer part of a floating-point number",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmathtrunc.htm"
+    },
+    "GetEnvValue": {
+        "!type": "fn() -> ",
+        "!doc" : "function GetEnvValue(sVariable: string): string; Get values of Windows environment variables",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncosgetenvvalue.htm"
+    },
+    "mLogScript": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure mLogScript(sMsg, sTag: string); Output text to the console of MyChat Server script editor",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdebuglogscript.htm"
+    },
+    "Protocol": {
+        "!type": "fn() -> ",
+        "!doc" : "function Protocol(sMsg, sFileName: string; bDateTimeStamp: boolean): integer; Saving a message to the log text file",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdebugprotocol.htm"
+    },
+    "SetScriptTimeOut": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure SetScriptTimeOut(iMaxTime: integer); Function to set a maximum time for the script execution. The exceeding of the script execution time can make the system stop the script",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncsetscripttimeout.htm"
+    },
+    "mGetMaxRegisteredUIN": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetMaxRegisteredUIN: integer; The maximum unique identifier (UIN) of the last registered user on the server",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmgetmaxregistereduin.htm"
+    },
+    "mGetUserAttribute": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetUserAttribute(iUIN: integer;sAttributeName: string): string; Get any field from the user's profile by his attribute",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmgetuserattribute.htm"
+    },
+    "mGetUserCID": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetUserCID(iUIN: integer): integer; Get the network number of the online client connection by its UIN",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmgetusercid.htm"
+    },
+    "mGetUserDataAsJSON": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetUserDataAsJSON(iUIN: integer; sParams: string): string; Get the list of any user's fields in JSON format by his UIN",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmgetuserdataasjson.htm"
+    },
+    "mGetUserFullNameByPreset": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetUserFullNameByPreset(iUIN, iStyle: integer): string; Get a name of MyChat user in text format according to the template",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmgetuserfullnamebypreset.htm"
+    },
+    "mGetUserPrimaryEmail": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetUserPrimaryEmail(iUIN: integer): string; Get the main email address of a user by his UIN",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmgetuserprimaryemail.htm"
+    },
+    "mGetUserState": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetUserState(iUIN: integer): integer; determine the user's network status by his UIN",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmgetuserstate.htm"
+    },
+    "mIsUINExists": {
+        "!type": "fn() -> ",
+        "!doc" : "function mIsUINExists(iUIN: integer): boolean; determine if a user with a specified identifier is registered on the server",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmisuinexists.htm"
+    },
+    "mIsUINOnline": {
+        "!type": "fn() -> ",
+        "!doc" : "function mIsUINOnline(iUIN: integer): boolean; check if a user with a specified UIN is online or not",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmisuinonline.htm"
+    },
+    "FloatToStr": {
+        "!type": "fn() -> ",
+        "!doc" : "function FloatToStr(iValue: extended): string; Convert a floating-point value to a string",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctypesconversionfloattostr.htm"
+    },
+    "IntToStr": {
+        "!type": "fn() -> ",
+        "!doc" : "function IntToStr(iValue: integer): string; Convert an integer to a string",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctypesconversioninttostr.htm"
+    },
+    "StrToFloat": {
+        "!type": "fn() -> ",
+        "!doc" : "function StrToFloat(sValue: string): extended; Convert a string to a floating-point number",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctypesconversionstrtofloat.htm"
+    },
+    "StrToInt": {
+        "!type": "fn() -> ",
+        "!doc" : "function StrToInt(sSt: string): integer; Converting the text string to an integer with an optional sign",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctypesconversionstrtoint.htm"
+    },
+    "StrToIntDef": {
+        "!type": "fn() -> ",
+        "!doc" : "function StrToIntDef(st: string; iDefaultValue: integer): integer; Convert the text string to an integer with an optional sign, considering the default value",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctypesconversionstrtointdef.htm"
+    },
+    "JSONGetBoolean": {
+        "!type": "fn() -> ",
+        "!doc" : "function JSONGetBoolean(sJSON, sKey: string; var bValue: boolean): integer; Get the Boolean value of a key from a JSON object",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsongetboolean.htm"
+    },
+    "JSONGetDateTime": {
+        "!type": "fn() -> ",
+        "!doc" : "function JSONGetDateTime(sJSON, sKey: string; var dtvalue: double): integer; Get the date and time value of a key from a JSON object",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsongetdatetime.htm"
+    },
+    "JSONGetInteger": {
+        "!type": "fn() -> ",
+        "!doc" : "function JSONGetInteger(sJSON, sKey: string; var iValue: integer): integer; Get an integer value of a key from a JSON object",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsongetinteger.htm"
+    },
+    "JSONGetString": {
+        "!type": "fn() -> ",
+        "!doc" : "function JSONGetString(sJSON, sKey: string; var sValue: string): integer; Get a text value of a key from a JSON object",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsongetstring.htm"
+    },
+    "JSONSetBoolean": {
+        "!type": "fn() -> ",
+        "!doc" : "function JSONSetBoolean(var sJSON, sKey: string; bValue: boolean): integer; Create or change the Boolean value in a JSON object",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonsetboolean.htm"
+    },
+    "JSONSetDateTime": {
+        "!type": "fn() -> ",
+        "!doc" : "function JSONSetDateTime(var sJSON: string; sKey: string; dtvalue: double): integer; Set or create a value of the date/time key in a JSON object",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonsetdatetime.htm"
+    },
+    "JSONSetInteger": {
+        "!type": "fn() -> ",
+        "!doc" : "function JSONSetInteger(var sJSON: string; sKey: string; iValue: integer): integer; Create or change an integer value of the key in a JSON object",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonsetinteger.htm"
+    },
+    "JSONSetString": {
+        "!type": "fn() -> ",
+        "!doc" : "function JSONSetString(var sJSON: string; sKey: string; sValue: string): integer; Rename or create a text key in a JSON object",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonsetstring.htm"
+    },
+    "RegGetInt": {
+        "!type": "fn() -> ",
+        "!doc" : "function RegGetInt(iRootKey: cardinal; sName: string; var iValue: cardinal): boolean; Read an integer from the registry",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncregistryreggetint.htm"
+    },
+    "RegGetString": {
+        "!type": "fn() -> ",
+        "!doc" : "function RegGetString(iRootKey: cardinal; sName: string; var sValue: string): boolean; Read a text string from the registry",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncregistryreggetstring.htm"
+    },
+    "RegSetInt": {
+        "!type": "fn() -> ",
+        "!doc" : "function RegSetInt(iRootKey: cardinal; sName: string; iValue: cardinal): boolean; Save an integer with a sign.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncregistryregsetint.htm"
+    },
+    "RegSetString": {
+        "!type": "fn() -> ",
+        "!doc" : "function RegSetString(iRootKey: cardinal; sName: string; sValue: string): boolean; Save a text string to the registry",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncregistryregsetstring.htm"
+    },
+    "mHTTPSendPostMessage": {
+        "!type": "fn() -> ",
+        "!doc" : "function mHTTPSendPostMessage(sURL, sBody, sHeaders: string): string; Send POST queries over the network. HTTP/HTTPS are supported",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncnetworkmhttpsendpostmessage.htm"
+    },
+    "DeleteFile": {
+        "!type": "fn() -> ",
+        "!doc" : "function DeleteFile(sFileName:string): integer; Delete a file from disk",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncfilesdeletefile.htm"
+    },
+    "FileExists": {
+        "!type": "fn() -> ",
+        "!doc" : "function FileExists(sFileName: string): boolean; Check if a file exists by a specific path",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncfilesfileexists.htm"
+    },
+    "mAddAutoScriptFromString": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure mAddAutoScriptFromString(sScriptName, sScriptSource: string; dtToRun: double); Create a time-script from a specified text string",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncscriptmaddautoscriptfromstring.htm"
+    },
+    "mAddAutoScriptFromTemplate": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure mAddAutoScriptFromTemplate(sScriptName, sTemplateName: string; dtToRun: double); Add a time script from the template",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncscriptmaddautoscriptfromtemplate.htm"
+    },
+    "mClearAutoScriptsQueue": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure mClearAutoScriptsQueue; Clear a time-scripts execution queue",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncscriptmclearautoscriptsqueue.htm"
+    },
+    "mDeleteAutoScriptByName": {
+        "!type": "fn() -> ",
+        "!doc" : "function mDeleteAutoScriptByName(sScriptName: string): integer; Delete all time script entries which were added for automatic execution",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncscriptmdeleteautoscriptbyname.htm"
+    },
+    "mGetAutoScriptsCountByName": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetAutoScriptsCountByName(sScriptName: string): integer; Calculate a number of time-scripts with specified names which are scheduled for execution",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncscriptmgetautoscriptscountbyname.htm"
+    },
+    "mGetAutoScriptsQueueCount": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetAutoScriptsQueueCount: integer; Get a total number of time-scripts which are scheduled for execution",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncscriptmgetautoscriptsqueuecount.htm"
+    },
+    "Copy": {
+        "!type": "fn() -> ",
+        "!doc" : "function Copy(sSt: string; iFrom, iCount: integer): string; Copy a substring from a specified string",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringscopy.htm"
+    },
+    "Delete": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure Delete(var sSt: string; iFrom, iCount: integer); Deleting a substring from a specified string",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringsdelete.htm"
+    },
+    "Fetch": {
+        "!type": "fn() -> ",
+        "!doc" : "function Fetch(var sOriginal:string; sDelimiter: string): string; Cut a substring of a specified string from beginning to the first delimiter",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringsfetch.htm"
+    },
+    "Insert": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure Insert(var sOriginal: string; sWhatInsert: string; iFrom: integer); Insert a substring into a string at the specified position",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringsinsert.htm"
+    },
+    "IsStNumbers": {
+        "!type": "fn() -> ",
+        "!doc" : "function IsStNumbers(st: string): boolean; Determine if a text string consists of numbers only, without any other symbols",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringsisstnumbers.htm"
+    },
+    "IsStringInList": {
+        "!type": "fn() -> ",
+        "!doc" : "function IsStringInList(sWhat, sStringList, sDelimiter: string; bIgnoreCase: boolean): boolean; Search a substring in a string list that has delimiters between its elements",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringsisstringinlist.htm"
+    },
+    "Length": {
+        "!type": "fn() -> ",
+        "!doc" : "function Length(sSt: string): integer; Get a number of characters of a text string",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringslength.htm"
+    },
+    "LowerCase": {
+        "!type": "fn() -> ",
+        "!doc" : "function LowerCase(sSt: string): string; Convert all string symbols to lowercase",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringslowercase.htm"
+    },
+    "Pos": {
+        "!type": "fn() -> ",
+        "!doc" : "function Pos(sSubSt, sSt: string): integer; Search the specified substring in a string. The letter case is important",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringspos.htm"
+    },
+    "ReplaceString": {
+        "!type": "fn() -> ",
+        "!doc" : "function ReplaceString(sOriginal, sFrom, sTo:string; bReplaceAll, bIgnoreCase: boolean): string; Replace substring occurrences with another value in a source string",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringsreplacestring.htm"
+    },
+    "Trim": {
+        "!type": "fn() -> ",
+        "!doc" : "function Trim(st: string): string; Trim spaces at the beginning and end of a specified string",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringstrim.htm"
+    },
+    "UpperCase": {
+        "!type": "fn() -> ",
+        "!doc" : "function UpperCase(sSt: string): string; Convert string characters to uppercase",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringsuppercase.htm"
+    },
+    "CRLF": {
+        "!type": "fn() -> ",
+        "!doc" : "function CRLF: string; Characters for line breaks",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncservicecrlf.htm"
+    },
+    "Dec": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure Dec(var x); Decrease a variable value by 1",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncservicedec.htm"
+    },
+    "High": {
+        "!type": "fn() -> ",
+        "!doc" : "function High(var x): integer; Get the highest value of a specified variable",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncservicehigh.htm"
+    },
+    "Inc": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure Inc(var x); Increase a variable value by 1",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncserviceinc.htm"
+    },
+    "Low": {
+        "!type": "fn() -> ",
+        "!doc" : "function Low(var x): integer; Get the lowest value of a specified variable",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncservicelow.htm"
+    },
+    "Max": {
+        "!type": "fn() -> ",
+        "!doc" : "function Max(iValue1, iValue2: integer): integer; Get the grater value of two numeric values",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncservicemax.htm"
+    },
+    "Min": {
+        "!type": "fn() -> ",
+        "!doc" : "function Min(iValue1, iValue2: integer): integer; Get the lesser value of two specified integers",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncservicemin.htm"
+    },
+    "Random": {
+        "!type": "fn() -> ",
+        "!doc" : "function Random(x: integer): integer; Get a random number within a specified range",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncservicerandom.htm"
+    },
+    "RegExpIsMatch": {
+        "!type": "fn() -> ",
+        "!doc" : "function RegExpIsMatch(sInpString, sRegExp: string): boolean; Check a string correspondence for the specified regular expression",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncregexpregexpismatch.htm"
+    },
+    "mConvertMsgToPlainText": {
+        "!type": "fn() -> ",
+        "!doc" : "function mConvertMsgToPlainText(sMsg: string; iMsgType: integer): string; Converting message text to plain text with no tags and special characters",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmessagesmconvertmsgtoplaintext.htm"
+    },
+    "mSendCustomMsgToClientConsoleByCID": {
+        "!type": "fn() -> ",
+        "!doc" : "function mSendCustomMsgToClientConsoleByCID(iCID: integer; sMsg, sSound: string; bFocus, bSaveToLog: boolean; iType: integer): integer; Send a special message to MyChat Client console",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmessagesmsendcustommsgtoclientconsolebycid.htm"
+    },
+    "mSendPrivateMessage": {
+        "!type": "fn() -> ",
+        "!doc" : "function mSendPrivateMessage(iUINFrom, iUINTo: integer; sMsg: string; iMsgType: integer; bSaveToHistory: boolean): integer; Send a private message on behalf of one user to another",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmessagesmsendprivatemessage.htm"
+    },
+    "mSendPrivateTechMessage": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure mSendPrivateTechMessage(iUIN1, iUIN2: integer; sMsg: string; iType: integer); Send a technical message from server to private conversation",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmessagesmsendprivatetechmessage.htm"
+    },
+    "mDeleteUserFromCommonContacts": {
+        "!type": "fn() -> ",
+        "!doc" : "function mDeleteUserFromCommonContacts(iUIN: integer): boolean; Delete a user from the tree-like common list",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunccontactsmdeleteuserfromcommoncontacts.htm"
+    },
+    "mGetDepartmentIDByTextPath": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetDepartmentIDByTextPath(sPath: string): integer; Get the identifier of a group by full path name in a common contact list",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunccontactsmgetdepartmentidbytextpath.htm"
+    },
+    "mGetDepartmentTextPathByID": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetDepartmentTextPathByID(iID: integer): string; Get full path name to the specified group (department) from the common tree-like contact list by its numeric identifier",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunccontactsmgetdepartmenttextpathbyid.htm"
+    },
+    "mGetUserDepartmentID": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetUserDepartmentID(iUIN: integer): integer; Get the numeric identifier of a group in the tree-like common list by user UIN",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunccontactsmgetuserdepartmentid.htm"
+    },
+    "mGetUserDepartmentName": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetUserDepartmentName(iUIN: integer): string; Get a department name from the common contact list by user identifier (UIN)",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunccontactsmgetuserdepartmentname.htm"
+    },
+    "AddLineToFile": {
+        "!type": "fn() -> ",
+        "!doc" : "function AddLineToFile(sMsg, sFileName: string): integer; Add a message at the end of a text file",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctextfilesaddlinetofile.htm"
+    },
+    "LoadTextFromFile": {
+        "!type": "fn() -> ",
+        "!doc" : "function LoadTextFromFile(sFileName: string; iEncodingType: integer): string; Upload a text file content to a string with the specified file encoding",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctextfilesloadtextfromfile.htm"
+    },
+    "mGetRoleNameByID": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetRoleNameByID(iRoleID: integer): string; Get a user rights group name by his numeric ID",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncrolesmgetrolenamebyid.htm"
+    },
+    "mGetUserRoleID": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetUserRoleID(iUIN: integer): integer; Get a user rights group ID by his UIN",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncrolesmgetuserroleid.htm"
+    },
+    "mGetUserRoleName": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetUserRoleName(iUIN: integer): string; Get a user rights group name by his UIN",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncrolesmgetuserrolename.htm"
+    },
+    "SendEmail": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure SendEmail(sHost: string; iPort: integer; sUserName, sPass, sFullEmail: string; bSSL: boolean; sToList, sSubject: string; sMessageText: string; iMsgStyle: integer; sAttachedFiles: string); Send a letter via email",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncemailsendemail.htm"
+    },
+    "mGetServerServiceFolder": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetServerServiceFolder(iType: integer): string; Get various MyChat Server folders",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunccoremgetserverservicefolder.htm"
+    },
+    "mSendEmail": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure mSendEmail(sToList, sSubject, sMessageText: string; iMsgStyle: integer; sAttachedFiles: string); Send a letter via email using SMTP settings of MyChat Server",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncemailmsendemail.htm"
+    },
+   "mIsUserTeamLead": {
+        "!type": "fn() -> ",
+        "!doc" : "function mIsUserTeamLead(iUIN: integer): boolean; Check if a user is the chief of the department",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmisuserteamlead.htm"
+    },
+   "StartOfTheYear": {
+        "!type": "fn() -> ",
+        "!doc" : "function StartOfTheYear(dt: double): double; Get the date and time of the start of the year",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatestartoftheyear.htm"
+    },
+   "EndOfTheYear": {
+        "!type": "fn() -> ",
+        "!doc" : "function EndOfTheYear(dt: double): double; Get the date and time of the end of the specified year",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdateendoftheyear.htm"
+    },
+   "StartOfTheMonth": {
+        "!type": "fn() -> ",
+        "!doc" : "function StartOfTheMonth(dt: double): double; get the date and time of the start of the month from the specified date",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatestartofthemonth.htm"
+    },
+   "EndOfTheMonth": {
+        "!type": "fn() -> ",
+        "!doc" : "function EndOfTheMonth(dt: double): double; Get the date and time of the end of the specified month",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdateendofthemonth.htm"
+    },
+   "StartOfTheWeek": {
+        "!type": "fn() -> ",
+        "!doc" : "StartOfTheWeek(dt: double): double; Get the date and time of the start of the week from the specified date",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatestartoftheweek.htm"
+    },
+   "EndOfTheWeek": {
+        "!type": "fn() -> ",
+        "!doc" : "EndOfTheWeek(dt: double): double; Get the date and time of the end of the specified week",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdateendoftheweek.htm"
+    },
+   "mGetRoleIDByName": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetRoleIDByName(sName: string): integer; Get a numeric ID of a rights group by its name",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncrolesmgetroleidbyname.htm"
+    },
+   "mGetUsersListByParams": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetUsersListByParams(sParams: string): string; Get the list of server users by the set of parameters",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmgetuserslistbyparams.htm"
+    },
+   "mGetUsersListByState": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetUsersListByState(iState: integer): string; Get the list of users by their network status",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmgetuserslistbystate.htm"
+    },
+   "mHaltMyChatClient": {
+        "!type": "fn() -> ",
+        "!doc" : "mHaltMyChatClient(iUIN: integer); Disconnect from the server a user with the specified UIN and shut down his client application forcefully",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmhaltmychatclient.htm"
+    },
+  "mExtractUserPhoto": {
+        "!type": "fn() -> ",
+        "!doc" : "mExtractUserPhoto(iUIN: integer; sPath, sFileName: string): integer; Export MyChat user profile photo to a file on the disk. The photo is saved in JPG format.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmextractuserphoto.htm"
+    },
+  "mIntegrationTelegramAddUser": {
+        "!type": "fn() -> ",
+        "!doc" : "mIntegrationTelegramAddUser(sID, sFirstName, sLastName, sNickName: string): integer; Add Telegram user on MyChat Server for future binding to MyChat user by UIN and Telegram user ID",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctelegramadduser.htm"
+    },
+  "mIntegrationTelegramGetUserIDByUIN": {
+        "!type": "fn() -> ",
+        "!doc" : "mIntegrationTelegramGetUserIDByUIN(iUIN: integer): string; Get Telegram user ID by his MyChat UIN",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctelegramgetuseridbyuin.htm"
+    },
+  "mIntegrationTelegramSendMessage": {
+        "!type": "fn() -> ",
+        "!doc" : "mIntegrationTelegramSendMessage(sTelegramID, sText: string): string; Send a message to the Telegram bot from MyChat",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctelegramsendmessage.htm"
+    },
+  "TextWithCRLFToJSON": {
+        "!type": "fn() -> ",
+        "!doc" : "TextWithCRLFToJSON(sText: string): string; Convert multi-line text to JSON object with a key-value pair",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringstextwithcrlftojson.htm"
+    },
+  "mGetServerExternalAddress": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetServerExternalAddress(iType: integer): string; Get full external address for various services of MyChat Server",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunccoremgetserverexternaladdress.htm"
+    },
+  "mIntegrationTelegramGetMyChatUINByTelegramID": {
+        "!type": "fn() -> ",
+        "!doc" : "mIntegrationTelegramGetMyChatUINByTelegramID(sID: string): integer; Get MyChat user UIN by his Telegram ID",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctelegramgetmychatuinbytelegramid.htm"
+    },
+  "mGetServerTechInfoInt": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetServerTechInfoInt(iID: integer): integer; Get internal technical data about running MyChat Server",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunccoremgetservertechinfoint.htm"
+    },
+  "mSetUserAttribute": {
+        "!type": "fn() -> ",
+        "!doc" : "mSetUserAttribute(iUIN: integer; sAttributeName, sValue: string): integer; Edit the user's profile data by his attribute",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmsetuserattribute.htm"
+    },
+  "mLogScriptToDisk": {
+        "!type": "fn() -> ",
+        "!doc" : "mLogScriptToDisk(sMsg: string); Save a message to the script execution protocol on the disk",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdebuglogscripttodisk.htm"
+    },
+  "mSendConfMessage": {
+        "!type": "fn() -> ",
+        "!doc" : "mSendConfMessage(iUID, iUINFrom: integer; sMsg: string; iMsgType: integer): integer; Send a message to a text conference",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncconfmsendconfmessage.htm"
+    },
+  "mSendBroadcast": {
+        "!type": "fn() -> ",
+        "!doc" : "mSendBroadcast(sMsg, sUINsList: string; dtActualTo: double; iStyle: integer): integer; Send a notification",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmessagesmsendbroadcast.htm"
+    },
+  "mGetCIDAttribute": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetCIDAttribute(iCID: integer; sAttributeName: string): string; Get the properties of the user's connection",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmgetcidattribute.htm"
+    },
+  "mGetConfUIDByName": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetConfUIDByName(sConfName: string): integer; Get numeric identifier of text conference by its name",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncconfmgetconfuidbyname.htm"
+    },
+  "mIsConfExists": {
+        "!type": "fn() -> ",
+        "!doc" : "mIsConfExists(iUID: integer): boolean; Check current existence of a specified text conference",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncconfmisconfexists.htm"
+    },
+  "mClearConfWindow": {
+        "!type": "fn() -> ",
+        "!doc" : "mClearConfWindow(iUID: integer); Clear a text window content for all online conference members.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncconfmclearconfwindow.htm"
+    },
+  "mGetUsersListInGroupByName": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetUsersListInGroupByName(sGroupName: string): string; Get group users",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgroupsmgetuserslistingroupbyname.htm"
+    },
+  "mGetUsersListInGroupsByNames": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetUsersListInGroupsByNames(sGroupNames: string): string; Get a list of users from several groups",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgroupsmgetuserslistingroupsbynames.htm"
+    },
+  "UTCToLocalTime": {
+        "!type": "fn() -> ",
+        "!doc" : "UTCToLocalTime(dt: double): double; Convert UTC date and time to local computer time",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdateutctolocaltime.htm"
+    },
+  "LocalTimeToUTC": {
+        "!type": "fn() -> ",
+        "!doc" : "LocalTimeToUTC(dt: double): double; Convert local computer time to UTC",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatelocaltimetoutc.htm"
+    },
+  "mCreateUsersGroup": {
+        "!type": "fn() -> ",
+        "!doc" : "mCreateUsersGroup(sGroupName: string): integer; Create new users group.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgroupsmcreateusersgroup.htm"
+    },
+  "mDeleteUsersGroup": {
+        "!type": "fn() -> ",
+        "!doc" : "mDeleteUsersGroup(sGroupName: string): integer; Delete users group by name.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgroupsmdeleteusersgroup.htm"
+    },
+  "mIsUsersGroupExists": {
+        "!type": "fn() -> ",
+        "!doc" : "mIsUsersGroupExists(sGroupName: string): boolean; Check the existence of a specified users group.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgroupsmisusersgroupexists.htm"
+    },
+  "mIsUserInGroup": {
+        "!type": "fn() -> ",
+        "!doc" : "mIsUserInGroup(iUIN: integer; sGroupName: string): boolean; Check if a a user exists in a specified group",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgroupsmisuseringroup.htm"
+    },
+  "mAddUserToGroup": {
+        "!type": "fn() -> ",
+        "!doc" : "mAddUserToGroup(iUIN: integer; sGroupName: string): integer; Add a specified user to a specified group",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgroupsmaddusertogroup.htm"
+    },
+  "mRemoveUserFromGroup": {
+        "!type": "fn() -> ",
+        "!doc" : "mRemoveUserFromGroup(iUIN: integer; sGroupName: string): integer; Remove a user from a group",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgroupsmremoveuserfromgroup.htm"
+    },
+  "mGetUserGroupsListAsJSON": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetUserGroupsListAsJSON(iUIN: integer): string; Get a list of groups that a specified user is a member of",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgroupsmgetusergroupslistasjson.htm"
+    },
+  "mIsUserInGroups": {
+        "!type": "fn() -> ",
+        "!doc" : "mIsUserInGroups(iUIN: integer): boolean; Check if a specified user exists at least in one group.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgroupsmisuseringroups.htm"
+    },
+  "mRenameUsersGroup": {
+        "!type": "fn() -> ",
+        "!doc" : "mRenameUsersGroup(sOldGroupName, sNewGroupName: string): integer; Rename a group of users",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgroupsmrenameusersgroup.htm"
+    },
+  "JSONArrayLength": {
+        "!type": "fn() -> ",
+        "!doc" : "JSONArrayLength(sJSON: string): integer; Get a number of array elements in JSON format",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonarraylength.htm"
+    },
+  "JSONArrayGetString": {
+        "!type": "fn() -> ",
+        "!doc" : "JSONArrayGetString(sJSON: string; iIdx: integer; var sValue: string): integer; Geta specified text element from a JSON array by index",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonarraygetstring.htm"
+    },
+  "JSONArrayGetInteger": {
+        "!type": "fn() -> ",
+        "!doc" : "JSONArrayGetInteger(sJSON: string; iIdx: integer; var iValue: integer): integer; Get an integer from a JSON array by index.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonarraygetinteger.htm"
+    },
+  "JSONArrayGetBoolean": {
+        "!type": "fn() -> ",
+        "!doc" : "JSONArrayGetBoolean(sJSON: string; iIdx: integer; var bValue: boolean): integer; Get the Boolean value of a JSON array element by index",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonarraygetboolean.htm"
+    },
+  "JSONArrayGetDateTime": {
+        "!type": "fn() -> ",
+        "!doc" : "JSONArrayGetDateTime(sJSON: string; iIdx: integer; var dtValue: double): integer; Get the date and time value from a JSON array by index",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonarraygetdatetime.htm"
+    },
+  "JSONArraySetString": {
+        "!type": "fn() -> ",
+        "!doc" : "JSONArraySetString(var sJSON: string; iIdx: integer; sValue: string): integer; rename or create a text key of a JSON object",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonarraysetstring.htm"
+    },
+  "JSONArraySetInteger": {
+        "!type": "fn() -> ",
+        "!doc" : "JSONArraySetInteger(var sJSON: string; iIdx, iValue: integer): integer; Change a specified integer of a JSON array by index",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonarraysetinteger.htm"
+    },
+  "JSONArraySetBoolean": {
+        "!type": "fn() -> ",
+        "!doc" : "JSONArraySetBoolean(var sJSON: string; iIdx: integer; bValue: boolean): integer; Change a specified Boolean element of a JSON array by index",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonarraysetboolean.htm"
+    },
+  "JSONArraySetDateTime": {
+        "!type": "fn() -> ",
+        "!doc" : "JSONArraySetDateTime(var sJSON: string; iIdx: integer; dtValue: double): integer; Change the date and time value of a specified JSON array element by index",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonarraysetdatetime.htm"
+    },
+  "StrToHex": {
+        "!type": "fn() -> ",
+        "!doc" : "StrToHex(sData: string): string; Convert a original binary string to its hexadecimal text representation by bytes",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncencodingstrtohex.htm"
+    },
+  "CRC32": {
+        "!type": "fn() -> ",
+        "!doc" : "CRC32(sData: string): integer; Get CRC32 checksum of a text string",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncencodingcrc32.htm"
+    },
+  "MD5": {
+        "!type": "fn() -> ",
+        "!doc" : "MD5(sData: string): string; Get MD5 hash code of a text string",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncencodingmd5.htm"
+    },
+  "HMAC_MD5": {
+        "!type": "fn() -> ",
+        "!doc" : "HMAC_MD5(sData, sKey: string): string; obtain a hash code of a string based on the key, using HMAC method and MD5 hashing algorithm",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncencodinghmacmd5.htm"
+    },
+  "SHA1": {
+        "!type": "fn() -> ",
+        "!doc" : "SHA1(sData: string): string; Get SHA1 hash code of a text string",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncencodingsha1.htm"
+    },
+  "HMAC_SHA1": {
+        "!type": "fn() -> ",
+        "!doc" : "HMAC_SHA1(sData, sKey: string): string; Get a hash code based on the key using HMAC method and SHA1 hashing algorithm",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncencodinghmacsha1.htm"
+    },
+  "EncodeBase64": {
+        "!type": "fn() -> ",
+        "!doc" : "EncodeBase64(sData: string): string; Convert text string to Base64 representation (using 64 symbols of ASCII only)",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncencodingencodebase64.htm"
+    },
+  "DecodeBase64": {
+        "!type": "fn() -> ",
+        "!doc" : "DecodeBase64(sData: string): string; convert text string from Base64 representation to plain text",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncencodingdecodebase64.htm"
+    },
+  "EncodeURL": {
+        "!type": "fn() -> ",
+        "!doc" : "EncodeURL(sURL: string): string; Encode a string to URL format",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncencodingencodeurl.htm"
+    },
+  "DecodeURL": {
+        "!type": "fn() -> ",
+        "!doc" : "DecodeURL(sURL: string): string; Decode a string from URL format to plain text.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncencodingdecodeurl.htm"
+    },
+  "EncodeUU": {
+        "!type": "fn() -> ",
+        "!doc" : "EncodeUU(sData: string): string; Encode a string to UU format",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncencodingencodeuu.htm"
+    },
+  "DecodeUU": {
+        "!type": "fn() -> ",
+        "!doc" : "DecodeUU(sData: string): string; Decode a string from UU format to plain text",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncencodingdecodeuu.htm"
+    },
+  "mClearConsole": {
+        "!type": "fn() -> ",
+        "!doc" : "mClearConsole; Clear a script execution console",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncscriptmclearconsole.htm"
+    },
+  "mHTTPSendGetMessage": {
+        "!type": "fn() -> ",
+        "!doc" : "mHTTPSendGetMessage(sURL, sHeaders: string; iTimeOut: integer): string; Send HTTP GET query",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncnetworkmhttpsendgetmessage.htm"
+    },
+  "StrToInt64": {
+        "!type": "fn() -> ",
+        "!doc" : "StrToInt64(sSt: string): int64; Convert a text string to a 64-bit integer with an optional sign",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctypesconversionstrtoint64.htm"
+    },
+  "StrToInt64Def": {
+        "!type": "fn() -> ",
+        "!doc" : "StrToInt64Def(st: string; iDefaultValue: int64): int64; Convert a text string to a 64-bit integer with an optional sign, considering the default value.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctypesconversionstrtoint64def.htm"
+    },
+  "GeoIPGetFullInfoAsJSON": {
+        "!type": "fn() -> ",
+        "!doc" : "GeoIPGetFullInfoAsJSON(sIP: string): string; Get full information about user IP address as a JSON object",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgeoipgetfullinfoasjson.htm"
+    },
+  "GeoIPGetQuickInfo": {
+        "!type": "fn() -> ",
+        "!doc" : "GeoIPGetQuickInfo(sIP: string): string; Get a string with a country and city by user IP address",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgeoipgetquickinfo.htm"
+    },
+  "mSetUserRoleID": {
+        "!type": "fn() -> ",
+        "!doc" : "mSetUserRoleID(iUIN, iRole: integer): integer; Change a user rights group",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncrolesmsetuserroleid.htm"
+    },
+  "mAddUserToCommonContacts": {
+        "!type": "fn() -> ",
+        "!doc" : "mAddUserToCommonContacts(iUIN, iGroupID: integer): integer; Add a user to the tree-like common contact list",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunccontactsmaddusertocommoncontacts.htm"
+    },
+  "FileSize": {
+        "!type": "fn() -> ",
+        "!doc" : "FileSize(sFileName:string): integer; Get the file's size on the disk in bytes",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncfilesfilesize.htm"
+    },
+  "IntToKbyte": {
+        "!type": "fn() -> ",
+        "!doc" : "IntToKbyte(iValue: int64): string; Short text format of the file's size (in bytes, kilobytes, megabytes or gigabytes)",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncfilesinttokbyte.htm"
+    },
+  "mMakeBackupServerDataBase": {
+        "!type": "fn() -> ",
+        "!doc" : "mMakeBackupServerDataBase(sFileNameWithPath: string): string; Create a full backup copy of the server's databases in ZIP",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfunccoremmakebackupserverdatabase.htm"
+    },
+  "ExtractFilePath": {
+        "!type": "fn() -> ",
+        "!doc" : "ExtractFileExt(sFileName:string): string; Get the file's path from the text string",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncfilesextractfilepath.htm"
+    },
+  "ExtractFileName": {
+        "!type": "fn() -> ",
+        "!doc" : "ExtractFileExt(sFileName:string): string; Get the file's name from the text string",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncfilesextractfilename.htm"
+    },
+  "ExtractFileExt": {
+        "!type": "fn() -> ",
+        "!doc" : "ExtractFileExt(sFileName:string): string; Get the file's extension from the text string",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncfilesextractfileext.htm"
+    },
+  "IntToHex": {
+        "!type": "fn() -> ",
+        "!doc" : "IntToHex(iValue: int64; iDigits: byte): string; Convert an integer to hexadecimal number as a string",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfunctypesconversioninttohex.htm"
+    },
+  "HexToInt": {
+        "!type": "fn() -> ",
+        "!doc" : "HexToInt(sValue: string): cardinal; Convert hexadecimal number to decimal number",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfunctypesconversionhextoint.htm"
+    },
+  "mAddUserToWebSupportGroup": {
+        "!type": "fn() -> ",
+        "!doc" : "mAddUserToWebSupportGroup(iUIN, iID: integer): integer; Add a user to a group of WEB support operators",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncwebsupportmaddusertowebsupportgroup.htm"
+    },
+  "mCreateWebSupportGroup": {
+        "!type": "fn() -> ",
+        "!doc" : "mCreateWebSupportGroup(sName: string): integer; Create a new group of WEB support operators",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncwebsupportmcreatewebsupportgroup.htm"
+    },
+  "mDeleteUserFromWebSupport": {
+        "!type": "fn() -> ",
+        "!doc" : "mDeleteUserFromWebSupport(iUIN: integer): integer; Delete a user from a group of WEB support operators",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncwebsupportmdeleteuserfromwebsupport.htm"
+    },
+  "mDeleteWebSupportGroup": {
+        "!type": "fn() -> ",
+        "!doc" : "mDeleteWebSupportGroup(iID: integer): integer; Delete a group of WEB support operators",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncwebsupportmdeletewebsupportgroup.htm"
+    },
+  "mGetUserWebSupportGroupID": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetUserWebSupportGroupID(iUIN: integer): integer; Get an ID of a WEB support group for a specified user",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncwebsupportmgetuserwebsupportgroupid.htm"
+    },
+  "mGetWebSupportGroupIDByName": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetWebSupportGroupIDByName(sName: string): integer; Get a numeric ID of a WEB support group by name",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncwebsupportmgetwebsupportgroupidbyname.htm"
+    },
+  "mGetWebSupportGroupNameByID": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetWebSupportGroupNameByID(iID: integer): string; Get a name of a WEB support operators group by numeric ID",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncwebsupportmgetwebsupportgroupnamebyid.htm"
+    },
+  "mGetWebSupportGroupUsers": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetWebSupportGroupUsers(iID: integer): string; Get a list of user UINs for a specified group of WEB support operators",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncwebsupportmgetwebsupportgroupusers.htm"
+    },
+  "mRenameWebSupportGroup": {
+        "!type": "fn() -> ",
+        "!doc" : "mRenameWebSupportGroup(iID: integer; sNewName: string): integer; Rename an existing group of WEB support operators",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncwebsupportmrenamewebsupportgroup.htm"
+    },
+  "mWebSupportGroupIDExists": {
+        "!type": "fn() -> ",
+        "!doc" : "mWebSupportGroupIDExists(iID: integer): boolean; Check the existence of a specified numeric ID of a WEB support group",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncwebsupportmwebsupportgroupidexists.htm"
+    },
+  "mMoveUserToDepartment": {
+        "!type": "fn() -> ",
+        "!doc" : "mMoveUserToDepartment(iUIN, iGroupID: integer): integer; Move a user from one group of the common tree-like contact list to another",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfunccontactsmmoveusertodepartment.htm"
+    },
+  "mCommonContactsRebuild": {
+        "!type": "fn() -> ",
+        "!doc" : "mCommonContactsRebuild; Rebuild cache of the common tree-like contact list and send it to all clients immediately",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfunccontactsmcommoncontactsrebuild.htm"
+    },
+  "mCloseAllDialogs": {
+        "!type": "fn() -> ",
+        "!doc" : "mCloseAllDialogs(bAll: boolean); Close all private dialogues for the server users",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfunccoremclosealldialogs.htm"
+    },
+  "mKillClient": {
+        "!type": "fn() -> ",
+        "!doc" : "mKillClient(iUIN: integer): integer; Disconnect a user with a specified account from the server",
+        "!url" : "https://nsoft-s.com/en/mcserverhelp/index.html?scriptsfuncusersmkillclient.htm"
+    }
+}

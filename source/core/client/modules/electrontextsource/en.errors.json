@@ -1,0 +1,8 @@
+{
+  "1" : "Server with this IP: \"%s \" and Port: \"%s\" already exists!",
+  "2" : "Unknown ServerID: %s, server wasn't saved!",
+  "3" : "No connection to FTP server",
+  "4" : "FTP error",
+  "5" : "Download file error: %s",
+  "6" : "Upload file error: %s"
+}

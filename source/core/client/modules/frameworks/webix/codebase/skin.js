@@ -1,0 +1,5 @@
+//[Skin Customization]
+webix.skin.compact.js.skin=//[Skin Customization]
+webix.skin.compact.barHeight=34;webix.skin.compact.tabbarHeight=34;webix.skin.compact.rowHeight=30;webix.skin.compact.listItemHeight=30;webix.skin.compact.inputHeight=32;webix.skin.compact.layoutMargin.wide=5;webix.skin.compact.layoutMargin.space=5;webix.skin.compact.layoutPadding.space=5;
+ webix.skin.set('compact');webix.skin.compact.barHeight=34;webix.skin.compact.tabbarHeight=34;webix.skin.compact.rowHeight=30;webix.skin.compact.listItemHeight=30;webix.skin.compact.inputHeight=32;webix.skin.compact.layoutMargin.wide=5;webix.skin.compact.layoutMargin.space=5;webix.skin.compact.layoutPadding.space=5;
+ webix.skin.set('compact')

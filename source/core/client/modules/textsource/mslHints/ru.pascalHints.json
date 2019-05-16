@@ -1,0 +1,1054 @@
+{
+    "!name": "pascal",
+
+    "DayOf": {
+        "!type": "fn() -> ",
+        "!doc" : "function DayOf(dt: double): integer; Получить значение дня из переменной даты и времени.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatedayof.htm"
+    },
+    "DayOfTheWeek": {
+        "!type": "fn() -> ",
+        "!doc" : "function DayOfTheWeek(dt: double): integer; Получить номер дня недели по указанной дате.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatedayoftheweek.htm"
+    },
+    "DaysBetween": {
+        "!type": "fn() -> ",
+        "!doc" : "function DaysBetween(dNow, dThen: double): integer; Узнать, сколько полных дней между двумя датами.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatetimedaysbetween.htm"
+    },
+    "DecodeDate": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure DecodeDate(dt: double; var wYear, wMonth, wDay: word); Возвращает значения года, месяца и дня из значения переменной даты и времени.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatedecodedate.htm"
+    },
+    "DecodeDateTime": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure DecodeDateTime(dt: double; var wYear, wMonth, wDay, wHour, wMinute, wSecond, wMilliSec: word); Возвращает значения года, месяца, дня, часов, минут, секунд и миллисекунд из значения переменной даты и времени.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatedecodedatetime.htm"
+    },
+    "EncodeDate": {
+        "!type": "fn() -> ",
+        "!doc" : "function EncodeDate(wYear, wMonth, wDay: word): double; Получение переменной типа дата/время из переданных значений года, месяца и дня.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdateencodedate.htm"
+    },
+    "EncodeDateTime": {
+        "!type": "fn() -> ",
+        "!doc" : "function EncodeDateTime(wYear, wMonth, wDay, wHour, wMinute, wSecond, wMilliSec: word): double; Получение переменной типа дата/время из переданных значений года, месяца, дня, часов, минут, секунд и миллисекунд.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdateencodedatetime.htm"
+    },
+    "EndOfTheDay": {
+        "!type": "fn() -> ",
+        "!doc" : "function EndOfTheDay(dt: double): double; Получить значение даты и времени конца суток указанной даты.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdateendoftheday.htm"
+    },
+    "FormatDateTime": {
+        "!type": "fn() -> ",
+        "!doc" : "function FormatDateTime(sFormat: string; dt: double): string; Преобразование даты и времени в форматированную текстовую строку.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatetimeformatdatetime.htm"
+    },
+    "HourOf": {
+        "!type": "fn() -> ",
+        "!doc" : "function HourOf(dt: double): integer; Получить значение дня из переменной даты и времени.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatehourof.htm"
+    },
+    "HoursBetween": {
+        "!type": "fn() -> ",
+        "!doc" : "function HoursBetween(dNow, dThen: double): integer; Узнать, сколько полных часов между двумя датами.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatetimehoursbetween.htm"
+    },
+    "IncDay": {
+        "!type": "fn() -> ",
+        "!doc" : "function IncDay(dt: double; iDays: int64): double; Прибавить или отнять нужное количество дней к указанной дате.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdateincday.htm"
+    },
+    "IncHour": {
+        "!type": "fn() -> ",
+        "!doc" : "function IncHour(dt: double; iHours: int64): double; Прибавить или отнять нужное количество часов к указанной дате.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdateinchour.htm"
+    },
+    "IncMilliSecond": {
+        "!type": "fn() -> ",
+        "!doc" : "function IncMilliSecond(dt: double; iMilliSeconds: int64): double; Прибавить или отнять нужное количество миллисекунд к указанной дате.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdateincmillisecond.htm"
+    },
+    "IncMinute": {
+        "!type": "fn() -> ",
+        "!doc" : "function IncMinute(dt: double; iMinutes: int64): double; Прибавить или отнять нужное количество минут к указанной дате.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdateincminute.htm"
+    },
+    "IncMonth": {
+        "!type": "fn() -> ",
+        "!doc" : "function IncMonth(dt: double; iMonths: int64): double; Прибавить или отнять нужное количество месяцев к указанной дате.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdateincmonth.htm"
+    },
+    "IncSecond": {
+        "!type": "fn() -> ",
+        "!doc" : "function IncSecond(dt: double; iSeconds: int64): double; Прибавить или отнять нужное количество секунд к указанной дате.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdateincsecond.htm"
+    },
+    "IncWeek": {
+        "!type": "fn() -> ",
+        "!doc" : "function IncWeek(dt: double; iWeeks: int64): double; Прибавить или отнять нужное количество недель к указанной дате.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdateincweek.htm"
+    },
+    "IncYear": {
+        "!type": "fn() -> ",
+        "!doc" : "function IncYear(dt: double; iYears: int64): double; Прибавить или отнять нужное количество лет к указанной дате.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdateincyear.htm"
+    },
+    "MilliSecondsBetween": {
+        "!type": "fn() -> ",
+        "!doc" : "function MilliSecondsBetween(dNow, dThen: double): integer; Узнать, сколько миллисекунд между двумя датами.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatetimemillisecondsbetween.htm"
+    },
+    "MinuteOf": {
+        "!type": "fn() -> ",
+        "!doc" : "function MinuteOf(dt: double): integer; Получить значение минут текущего часа из переменной даты и времени.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdateminuteof.htm"
+    },
+    "MonthOf": {
+        "!type": "fn() -> ",
+        "!doc" : "function MonthOf(dt: double): integer; Получить значение месяца из переменной даты и времени.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatemonthof.htm"
+    },
+    "MonthsBetween": {
+        "!type": "fn() -> ",
+        "!doc" : "function MonthsBetween(dNow, dThen: double): integer; Узнать, сколько полных месяцев между двумя датами.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatetimemonthsbetween.htm"
+    },
+    "Now": {
+        "!type": "fn() -> ",
+        "!doc" : "function Now: double; Получить текущее значение даты и времени.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatetimenow.htm"
+    },
+    "SecondOf": {
+        "!type": "fn() -> ",
+        "!doc" : "function SecondOf(dt: double): integer; Получить значение секунд текущей минуты из переменной даты и времени.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatesecondof.htm"
+    },
+    "SecondsBetween": {
+        "!type": "fn() -> ",
+        "!doc" : "function SecondsBetween(dNow, dThen: double): integer; Узнать, сколько полных секунд между двумя датами.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatetimesecondsbetween.htm"
+    },
+    "StartOfTheDay": {
+        "!type": "fn() -> ",
+        "!doc" : "function StartOfTheDay(dt: double): double; Получение даты и времени начала суток указанной даты.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatestartoftheday.htm"
+    },
+    "WeekOf": {
+        "!type": "fn() -> ",
+        "!doc" : "function WeekOf(dt: double): integer; Получить значение недели из переменной даты и времени.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdateweekof.htm"
+    },
+    "WeeksBetween": {
+        "!type": "fn() -> ",
+        "!doc" : "function WeeksBetween(dNow, dThen: double): integer; Сколько недель между двумя указанными датами.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatetimeweeksbetween.htm"
+    },
+    "YearOf": {
+        "!type": "fn() -> ",
+        "!doc" : "function YearOf(dt: double): integer; Получить значение года из переменной даты и времени.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdateyearof.htm"
+    },
+    "YearsBetween": {
+        "!type": "fn() -> ",
+        "!doc" : "function YearsBetween(dNow, dThen: double): integer; Сколько лет между двумя указанными датами.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatetimeyearsbetween.htm"
+    },
+    "mGetConfNameByUID": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetConfNameByUID(iUID: integer): string; Получить текстовое имя многопользовательской конференции по её числовому идентификатору (UID).",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncconfmgetconfnamebyuid.htm"
+    },
+    "mIsUserIncludedToAutoConf": {
+        "!type": "fn() -> ",
+        "!doc" : "function mIsUserIncludedToAutoConf(iUIN, iUID: integer): boolean; Выяснить, входит ли пользователь в список людей, которые автоматически включаются в автосоздаваемую конференцию.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncconfmisuserincludedtoautoconf.htm"
+    },
+    "Abs": {
+        "!type": "fn() -> ",
+        "!doc" : "function Abs(x: extended): extended; Получить модуль от числа (целого или вещественного).",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmathabs.htm"
+    },
+    "Cos": {
+        "!type": "fn() -> ",
+        "!doc" : "function Cos(x: extended): extended; Вычислить значение косинуса числа в радианах.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmathcos.htm"
+    },
+    "Exp": {
+        "!type": "fn() -> ",
+        "!doc" : "function Exp(x: extended): extended; Вычислить экспоненту от числа.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmathexp.htm"
+    },
+    "Ln": {
+        "!type": "fn() -> ",
+        "!doc" : "function Ln(x: extended): extended; Функция для вычисления натурального логарифма.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmathln.htm"
+    },
+    "LogN": {
+        "!type": "fn() -> ",
+        "!doc" : "function LogN(Base, x: extended): extended; Функция вычисляет логарифм аргумента x по основанию Base.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmathlogn.htm"
+    },
+    "Pi": {
+        "!type": "fn() -> ",
+        "!doc" : "function Pi: extended; Получить значение числа Пи.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmathpi.htm"
+    },
+    "Round": {
+        "!type": "fn() -> ",
+        "!doc" : "function Round(x: extended): integer; Округление числа с плавающей точкой.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmathround.htm"
+    },
+    "Sin": {
+        "!type": "fn() -> ",
+        "!doc" : "function Sin(x: extended): extended; Вычислить значение синуса числа в радианах.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmathsin.htm"
+    },
+    "Trunc": {
+        "!type": "fn() -> ",
+        "!doc" : "function Trunc(x: extended): integer; Получить целую часть от числа с плавающей точкой.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmathtrunc.htm"
+    },
+    "GetEnvValue": {
+        "!type": "fn() -> ",
+        "!doc" : "function GetEnvValue(sVariable: string): string; Получить значение указанной системной переменной окружения Windows (environment variable).",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncosgetenvvalue.htm"
+    },
+    "mLogScript": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure mLogScript(sMsg, sTag: string); Вывод текста в отладочную консоль редактора скриптов.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdebuglogscript.htm"
+    },
+    "Protocol": {
+        "!type": "fn() -> ",
+        "!doc" : "function Protocol(sMsg, sFileName: string; bDateTimeStamp: boolean): integer; Сохранить сообщение в текстовый файл лога.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdebugprotocol.htm"
+    },
+    "SetScriptTimeOut": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure SetScriptTimeOut(iMaxTime: integer); Задать максимальное время исполнения скрипта, при превышениии которого он может быть принудительно остановлен системой.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncsetscripttimeout.htm"
+    },
+    "mGetMaxRegisteredUIN": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetMaxRegisteredUIN: integer; Максимальный уникальный идентификатор (UIN) последнего зарегистрированного на сервере пользователя.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmgetmaxregistereduin.htm"
+    },
+    "mGetUserAttribute": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetUserAttribute(iUIN: integer;sAttributeName: string): string; Функция для получения любого поля из профиля пользователя по его атрибуту.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmgetuserattribute.htm"
+    },
+    "mGetUserCID": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetUserCID(iUIN: integer): integer; Получить сетевой номер соединения онлайн-клиента по его UIN.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmgetusercid.htm"
+    },
+    "mGetUserDataAsJSON": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetUserDataAsJSON(iUIN: integer; sParams: string): string; Получение списка любых полей пользователя по его UIN в формате JSON.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmgetuserdataasjson.htm"
+    },
+    "mGetUserFullNameByPreset": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetUserFullNameByPreset(iUIN, iStyle: integer): string; Получить текстовое имя пользователя чата согласно шаблону.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmgetuserfullnamebypreset.htm"
+    },
+    "mGetUserPrimaryEmail": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetUserPrimaryEmail(iUIN: integer): string; Получить основной адрес электронной почты пользователя по его UIN.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmgetuserprimaryemail.htm"
+    },
+    "mGetUserState": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetUserState(iUIN: integer): integer; Определить сетевой статус пользователя по его UIN.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmgetuserstate.htm"
+    },
+    "mIsUINExists": {
+        "!type": "fn() -> ",
+        "!doc" : "function mIsUINExists(iUIN: integer): boolean; Выяснить, зарегистрирован ли на сервере пользователь с таким идентификатором (UIN).",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmisuinexists.htm"
+    },
+    "mIsUINOnline": {
+        "!type": "fn() -> ",
+        "!doc" : "function mIsUINOnline(iUIN: integer): boolean; Выяснить, онлайн (в сети) сейчас пользователь с заданным UIN или нет.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmisuinonline.htm"
+    },
+    "FloatToStr": {
+        "!type": "fn() -> ",
+        "!doc" : "function FloatToStr(iValue: extended): string; Преобразовать число с плавающей точкой в строку.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctypesconversionfloattostr.htm"
+    },
+    "IntToStr": {
+        "!type": "fn() -> ",
+        "!doc" : "function IntToStr(iValue: integer): string; Преобразовать целое число в строку.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctypesconversioninttostr.htm"
+    },
+    "StrToFloat": {
+        "!type": "fn() -> ",
+        "!doc" : "function StrToFloat(sValue: string): extended; Преобразовать строку в число с плавающей точкой.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctypesconversionstrtofloat.htm"
+    },
+    "StrToInt": {
+        "!type": "fn() -> ",
+        "!doc" : "function StrToInt(sSt: string): integer; Преобразовать текстовую строку в целое число со знаком.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctypesconversionstrtoint.htm"
+    },
+    "StrToIntDef": {
+        "!type": "fn() -> ",
+        "!doc" : "function StrToIntDef(st: string; iDefaultValue: integer): integer; Преобразовать текстовую строку в целое число со знаком, учитывая значение по умолчанию",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctypesconversionstrtointdef.htm"
+    },
+    "JSONGetBoolean": {
+        "!type": "fn() -> ",
+        "!doc" : "function JSONGetBoolean(sJSON, sKey: string; var bValue: boolean): integer; Получить булево значение ключа из JSON объекта.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsongetboolean.htm"
+    },
+    "JSONGetDateTime": {
+        "!type": "fn() -> ",
+        "!doc" : "function JSONGetDateTime(sJSON, sKey: string; var dtvalue: double): integer; Получить значение даты и времени ключа из JSON объекта.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsongetdatetime.htm"
+    },
+    "JSONGetInteger": {
+        "!type": "fn() -> ",
+        "!doc" : "function JSONGetInteger(sJSON, sKey: string; var iValue: integer): integer; Получить целое знаковое значение ключа из JSON объекта.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsongetinteger.htm"
+    },
+    "JSONGetString": {
+        "!type": "fn() -> ",
+        "!doc" : "function JSONGetString(sJSON, sKey: string; var sValue: string): integer; Получить текстовое значение ключа из JSON объекта.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsongetstring.htm"
+    },
+    "JSONSetBoolean": {
+        "!type": "fn() -> ",
+        "!doc" : "function JSONSetBoolean(var sJSON, sKey: string; bValue: boolean): integer; Создать либо изменить булево значение ключа в JSON объекте.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonsetboolean.htm"
+    },
+    "JSONSetDateTime": {
+        "!type": "fn() -> ",
+        "!doc" : "function JSONSetDateTime(var sJSON: string; sKey: string; dtvalue: double): integer; Установить либо создать значение ключа даты и времени в JSON объекте.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonsetdatetime.htm"
+    },
+    "JSONSetInteger": {
+        "!type": "fn() -> ",
+        "!doc" : "function JSONSetInteger(var sJSON: string; sKey: string; iValue: integer): integer; Создать либо изменить целое знаковое значение ключа в JSON объекте.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonsetinteger.htm"
+    },
+    "JSONSetString": {
+        "!type": "fn() -> ",
+        "!doc" : "function JSONSetString(var sJSON: string; sKey: string; sValue: string): integer; Обновить либо создать текстовый ключ в JSON объекте.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonsetstring.htm"
+    },
+    "RegGetInt": {
+        "!type": "fn() -> ",
+        "!doc" : "function RegGetInt(iRootKey: cardinal; sName: string; var iValue: cardinal): boolean; Прочитать из реестра целое число.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncregistryreggetint.htm"
+    },
+    "RegGetString": {
+        "!type": "fn() -> ",
+        "!doc" : "function RegGetString(iRootKey: cardinal; sName: string; var sValue: string): boolean; Прочитать из реестра текстовую строку.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncregistryreggetstring.htm"
+    },
+    "RegSetInt": {
+        "!type": "fn() -> ",
+        "!doc" : "function RegSetInt(iRootKey: cardinal; sName: string; iValue: cardinal): boolean; Сохранить в реестр целое число со знаком.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncregistryregsetint.htm"
+    },
+    "RegSetString": {
+        "!type": "fn() -> ",
+        "!doc" : "function RegSetString(iRootKey: cardinal; sName: string; sValue: string): boolean; Сохранить в реестр текстовую строку.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncregistryregsetstring.htm"
+    },
+    "mHTTPSendPostMessage": {
+        "!type": "fn() -> ",
+        "!doc" : "function mHTTPSendPostMessage(sURL, sBody, sHeaders: string): string; Функция для отправки POST запросов по сети. Поддерживается HTTP/HTTPS.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncnetworkmhttpsendpostmessage.htm"
+    },
+    "DeleteFile": {
+        "!type": "fn() -> ",
+        "!doc" : "function DeleteFile(sFileName:string): integer; Удаление файла с диска.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncfilesdeletefile.htm"
+    },
+    "FileExists": {
+        "!type": "fn() -> ",
+        "!doc" : "function FileExists(sFileName: string): boolean; Функция для проверки существования файла по указанному пути.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncfilesfileexists.htm"
+    },
+    "mAddAutoScriptFromString": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure mAddAutoScriptFromString(sScriptName, sScriptSource: string; dtToRun: double); Создать time-скрипт из текстовой строки.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncscriptmaddautoscriptfromstring.htm"
+    },
+    "mAddAutoScriptFromTemplate": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure mAddAutoScriptFromTemplate(sScriptName, sTemplateName: string; dtToRun: double); Добавление скрипта из готового шаблона",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncscriptmaddautoscriptfromtemplate.htm"
+    },
+    "mClearAutoScriptsQueue": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure mClearAutoScriptsQueue; Очистить очередь для выполнения запланированный time-скриптов.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncscriptmclearautoscriptsqueue.htm"
+    },
+    "mDeleteAutoScriptByName": {
+        "!type": "fn() -> ",
+        "!doc" : "function mDeleteAutoScriptByName(sScriptName: string): integer; Удалить все вхождения тайм-скриптов, которые были добавлены для автоматического выполнения.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncscriptmdeleteautoscriptbyname.htm"
+    },
+    "mGetAutoScriptsCountByName": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetAutoScriptsCountByName(sScriptName: string): integer; Узнать количество time-скриптов с указанным именем, запланированных к выполнению.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncscriptmgetautoscriptscountbyname.htm"
+    },
+    "mGetAutoScriptsQueueCount": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetAutoScriptsQueueCount: integer; Получить общее количество запланированных к выполнению time-скриптов в очереди.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncscriptmgetautoscriptsqueuecount.htm"
+    },
+    "Copy": {
+        "!type": "fn() -> ",
+        "!doc" : "function Copy(sSt: string; iFrom, iCount: integer): string; Скопировать подстроку из указанной строки.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringscopy.htm"
+    },
+    "Delete": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure Delete(var sSt: string; iFrom, iCount: integer); Удалить подстроку из строки.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringsdelete.htm"
+    },
+    "Fetch": {
+        "!type": "fn() -> ",
+        "!doc" : "function Fetch(var sOriginal:string; sDelimiter: string): string; Вырезать подстроку из указанной строки до первого разделителя.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringsfetch.htm"
+    },
+    "Insert": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure Insert(var sOriginal: string; sWhatInsert: string; iFrom: integer); Вставить подстроку в строку на указанную позицию.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringsinsert.htm"
+    },
+    "IsStNumbers": {
+        "!type": "fn() -> ",
+        "!doc" : "function IsStNumbers(st: string): boolean; Выяснить, содержит ли текстовая строка исключительно цифры и больше никаких символов.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringsisstnumbers.htm"
+    },
+    "IsStringInList": {
+        "!type": "fn() -> ",
+        "!doc" : "function IsStringInList(sWhat, sStringList, sDelimiter: string; bIgnoreCase: boolean): boolean; Поиск подстроки в строке-списке, между элементами которой находится какой-либо разделитель.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringsisstringinlist.htm"
+    },
+    "Length": {
+        "!type": "fn() -> ",
+        "!doc" : "function Length(sSt: string): integer; Получить количество символов в текстовой строке.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringslength.htm"
+    },
+    "LowerCase": {
+        "!type": "fn() -> ",
+        "!doc" : "function LowerCase(sSt: string): string; Преобразовать все символы строки в нижний регистр.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringslowercase.htm"
+    },
+    "Pos": {
+        "!type": "fn() -> ",
+        "!doc" : "function Pos(sSubSt, sSt: string): integer; Поиск подстроки в строке. Регистро-зависимый.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringspos.htm"
+    },
+    "ReplaceString": {
+        "!type": "fn() -> ",
+        "!doc" : "function ReplaceString(sOriginal, sFrom, sTo:string; bReplaceAll, bIgnoreCase: boolean): string; Функция для замены вхождений подстроки в оригинальной строке.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringsreplacestring.htm"
+    },
+    "Trim": {
+        "!type": "fn() -> ",
+        "!doc" : "function Trim(st: string): string; Обрезать пробелы в начале и в конце строки.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringstrim.htm"
+    },
+    "UpperCase": {
+        "!type": "fn() -> ",
+        "!doc" : "function UpperCase(sSt: string): string; Перевести все символы строки в БОЛЬШИЕ БУКВЫ верхнего регистра.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringsuppercase.htm"
+    },
+    "CRLF": {
+        "!type": "fn() -> ",
+        "!doc" : "function CRLF: string; Символы переноса на новую строку.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncservicecrlf.htm"
+    },
+    "Dec": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure Dec(var x); Уменьшить значение переменной на единицу.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncservicedec.htm"
+    },
+    "High": {
+        "!type": "fn() -> ",
+        "!doc" : "function High(var x): integer; Получить максимальное значение переменной указанного типа.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncservicehigh.htm"
+    },
+    "Inc": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure Inc(var x); Увеличить значение переменной на единицу.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncserviceinc.htm"
+    },
+    "Low": {
+        "!type": "fn() -> ",
+        "!doc" : "function Low(var x): integer; Получить максимальное значение переменной-параметра.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncservicelow.htm"
+    },
+    "Max": {
+        "!type": "fn() -> ",
+        "!doc" : "function Max(iValue1, iValue2: integer): integer; Получить максимальное из двух целых чисел.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncservicemax.htm"
+    },
+    "Min": {
+        "!type": "fn() -> ",
+        "!doc" : "function Min(iValue1, iValue2: integer): integer; Получить меньшее из двух целых чисел.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncservicemin.htm"
+    },
+    "Random": {
+        "!type": "fn() -> ",
+        "!doc" : "function Random(x: integer): integer; Получить случайное число из диапазона.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncservicerandom.htm"
+    },
+    "RegExpIsMatch": {
+        "!type": "fn() -> ",
+        "!doc" : "function RegExpIsMatch(sInpString, sRegExp: string): boolean; Проверка, соответствует ли заданная строка регулярному выражению (regular expression).",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncregexpregexpismatch.htm"
+    },
+    "mConvertMsgToPlainText": {
+        "!type": "fn() -> ",
+        "!doc" : "function mConvertMsgToPlainText(sMsg: string; iMsgType: integer): string; Преобразовать текст сообщения в plain text, без тегов и специальных символов.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmessagesmconvertmsgtoplaintext.htm"
+    },
+    "mSendCustomMsgToClientConsoleByCID": {
+        "!type": "fn() -> ",
+        "!doc" : "function mSendCustomMsgToClientConsoleByCID(iCID: integer; sMsg, sSound: string; bFocus, bSaveToLog: boolean; iType: integer): integer; Функция для отправки специального сообщения в консоль MyChat Client.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmessagesmsendcustommsgtoclientconsolebycid.htm"
+    },
+    "mSendPrivateMessage": {
+        "!type": "fn() -> ",
+        "!doc" : "function mSendPrivateMessage(iUINFrom, iUINTo: integer; sMsg: string; iMsgType: integer; bSaveToHistory: boolean): integer; Отправить приватное сообщение от имени одного пользователя — другому.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmessagesmsendprivatemessage.htm"
+    },
+    "mSendPrivateTechMessage": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure mSendPrivateTechMessage(iUIN1, iUIN2: integer; sMsg: string; iType: integer); Техническое сообщение в приват от имени сервера.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmessagesmsendprivatetechmessage.htm"
+    },
+    "mDeleteUserFromCommonContacts": {
+        "!type": "fn() -> ",
+        "!doc" : "function mDeleteUserFromCommonContacts(iUIN: integer): boolean; Удалить пользователя из общего списка контактов.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunccontactsmdeleteuserfromcommoncontacts.htm"
+    },
+    "mGetDepartmentIDByTextPath": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetDepartmentIDByTextPath(sPath: string): integer; Получить номер идентификатора группы из общего списка контактов сервера по его полному текстовому пути.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunccontactsmgetdepartmentidbytextpath.htm"
+    },
+    "mGetDepartmentTextPathByID": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetDepartmentTextPathByID(iID: integer): string; Получить полный текстовый путь к указанной группе (департаменту) из общего древовидного списка контактов от корня, по его числовому идентификатору.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunccontactsmgetdepartmenttextpathbyid.htm"
+    },
+    "mGetUserDepartmentID": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetUserDepartmentID(iUIN: integer): integer; Функция для получения числового идентификатора группы в общем древовидном списке контактов, в которой находится пользователь (по его UIN).",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunccontactsmgetuserdepartmentid.htm"
+    },
+    "mGetUserDepartmentName": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetUserDepartmentName(iUIN: integer): string; Получить название департамента пользователя из общего списка контактов по идентификатору пользователя (UIN).",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunccontactsmgetuserdepartmentname.htm"
+    },
+    "AddLineToFile": {
+        "!type": "fn() -> ",
+        "!doc" : "function AddLineToFile(sMsg, sFileName: string): integer; Добавить сообщение в конец текстового файла.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctextfilesaddlinetofile.htm"
+    },
+    "LoadTextFromFile": {
+        "!type": "fn() -> ",
+        "!doc" : "function LoadTextFromFile(sFileName: string; iEncodingType: integer): string; Загрузить содержимое текстового файла в переменную типа string с указанием кодировки файла.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctextfilesloadtextfromfile.htm"
+    },
+    "mGetRoleNameByID": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetRoleNameByID(iRoleID: integer): string; Получить название группы прав пользователей по его числовому ID.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncrolesmgetrolenamebyid.htm"
+    },
+    "mGetUserRoleID": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetUserRoleID(iUIN: integer): integer; Получить идентификатор группы прав пользователя по его UIN.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncrolesmgetuserroleid.htm"
+    },
+    "mGetUserRoleName": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetUserRoleName(iUIN: integer): string; Получить название группы прав пользователя по его UIN.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncrolesmgetuserrolename.htm"
+    },
+    "SendEmail": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure SendEmail(sHost: string; iPort: integer; sUserName, sPass, sFullEmail: string; bSSL: boolean; sToList, sSubject: string; sMessageText: string; iMsgStyle: integer; sAttachedFiles: string); Функция для отправки письма по электронной почте.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncemailsendemail.htm"
+    },
+    "mGetServerServiceFolder": {
+        "!type": "fn() -> ",
+        "!doc" : "function mGetServerServiceFolder(iType: integer): string; Функция для получения различных сервисных папок сервера MyChat.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunccoremgetserverservicefolder.htm"
+    },
+    "mSendEmail": {
+        "!type": "fn() -> ",
+        "!doc" : "procedure mSendEmail(sToList, sSubject, sMessageText: string; iMsgStyle: integer; sAttachedFiles: string); Процедура для отправки email, используя SMTP настройки сервера MyChat.",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncemailmsendemail.htm"
+    },
+   "mIsUserTeamLead": {
+        "!type": "fn() -> ",
+        "!doc" : "function mIsUserTeamLead(iUIN: integer): boolean; Выяснить, является ли пользователь руководителем подразделения?",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmisuserteamlead.htm"
+    },
+   "StartOfTheYear": {
+        "!type": "fn() -> ",
+        "!doc" : "function StartOfTheYear(dt: double): double; Получить начало года указанной даты",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatestartoftheyear.htm"
+    },
+   "EndOfTheYear": {
+        "!type": "fn() -> ",
+        "!doc" : "function EndOfTheYear(dt: double): double; Получить конец года указанной даты",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdateendoftheyear.htm"
+    },
+   "StartOfTheMonth": {
+        "!type": "fn() -> ",
+        "!doc" : "function StartOfTheMonth(dt: double): double; Получить дату начала месяца от указанной",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatestartofthemonth.htm"
+    },
+   "EndOfTheMonth": {
+        "!type": "fn() -> ",
+        "!doc" : "function EndOfTheMonth(dt: double): double; Получить дату конца месяца от указанной",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdateendofthemonth.htm"
+    },
+   "StartOfTheWeek": {
+        "!type": "fn() -> ",
+        "!doc" : "StartOfTheWeek(dt: double): double; Получить дату начала недели от указанной",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatestartoftheweek.htm"
+    },
+   "EndOfTheWeek": {
+        "!type": "fn() -> ",
+        "!doc" : "EndOfTheWeek(dt: double): double; Получить дату конца недели от указанной",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdateendoftheweek.htm"
+    },
+   "mGetRoleIDByName": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetRoleIDByName(sName: string): integer; Получить идентификатор группы прав по её названию",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncrolesmgetroleidbyname.htm"
+    },
+   "mGetUsersListByParams": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetUsersListByParams(sParams: string): string; Получение списка пользователей по набору параметров",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmgetuserslistbyparams.htm"
+    },
+   "mGetUsersListByState": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetUsersListByState(iState: integer): string; Получение списка пользователей по их статусу",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmgetuserslistbystate.htm"
+    },
+   "mHaltMyChatClient": {
+        "!type": "fn() -> ",
+        "!doc" : "mHaltMyChatClient(iUIN: integer); Отключить от сервера любого онлайн-пользователя и принудительно завершить работу его приложения",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmhaltmychatclient.htm"
+    },
+  "mExtractUserPhoto": {
+        "!type": "fn() -> ",
+        "!doc" : "mExtractUserPhoto(iUIN: integer; sPath, sFileName: string): integer; Экспорт фотографии пользователя MyChat в файл на диске. Фото сохраняется в формате JPG",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmextractuserphoto.htm"
+    },
+  "mIntegrationTelegramAddUser": {
+        "!type": "fn() -> ",
+        "!doc" : "mIntegrationTelegramAddUser(sID, sFirstName, sLastName, sNickName: string): integer; Добавить пользователя Telegram в MyChat Server для будущей привязки к пользователю MyChat (по UIN)",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctelegramadduser.htm"
+    },
+  "mIntegrationTelegramGetUserIDByUIN": {
+        "!type": "fn() -> ",
+        "!doc" : "mIntegrationTelegramGetUserIDByUIN(iUIN: integer): string; Получить Telegram ID пользователя по его MyChat UIN",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctelegramgetuseridbyuin.htm"
+    },
+  "mIntegrationTelegramSendMessage": {
+        "!type": "fn() -> ",
+        "!doc" : "mIntegrationTelegramSendMessage(sTelegramID, sText: string): string; Отправить текстовое сообщение боту Telegram из MyChat",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctelegramsendmessage.htm"
+    },
+  "TextWithCRLFToJSON": {
+        "!type": "fn() -> ",
+        "!doc" : "TextWithCRLFToJSON(sText: string): string; Преобразовать многострочный текст в JSON объект с парами ключ-значение, построчно",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncstringstextwithcrlftojson.htm"
+    },
+  "mGetServerExternalAddress": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetServerExternalAddress(iType: integer): string; Получить полный внешний адрес для разных сервисов MyChat Server",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunccoremgetserverexternaladdress.htm"
+    },
+  "mIntegrationTelegramGetMyChatUINByTelegramID": {
+        "!type": "fn() -> ",
+        "!doc" : "mIntegrationTelegramGetMyChatUINByTelegramID(sID: string): integer; Получить UIN зарегистрированного пользователя MyChat по его Telegram ID",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctelegramgetmychatuinbytelegramid.htm"
+    },
+  "mGetServerTechInfoInt": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetServerTechInfoInt(iID: integer): integer; Получение внутренних технических данных о работающем сервере",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunccoremgetservertechinfoint.htm"
+    },
+  "mSetUserAttribute": {
+        "!type": "fn() -> ",
+        "!doc" : "mSetUserAttribute(iUIN: integer; sAttributeName, sValue: string): integer; Изменение данных профиля пользователя",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmsetuserattribute.htm"
+    },
+  "mLogScriptToDisk": {
+        "!type": "fn() -> ",
+        "!doc" : "mLogScriptToDisk(sMsg: string); Записать текст в системный протокол работы скриптов на диск",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdebuglogscripttodisk.htm"
+    },
+  "mSendConfMessage": {
+        "!type": "fn() -> ",
+        "!doc" : "mSendConfMessage(iUID, iUINFrom: integer; sMsg: string; iMsgType: integer): integer; Отправить сообщение в текстовую конференцию",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncconfmsendconfmessage.htm"
+    },
+  "mSendBroadcast": {
+        "!type": "fn() -> ",
+        "!doc" : "mSendBroadcast(sMsg, sUINsList: string; dtActualTo: double; iStyle: integer): integer; Отправить оповещение",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncmessagesmsendbroadcast.htm"
+    },
+  "mGetCIDAttribute": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetCIDAttribute(iCID: integer; sAttributeName: string): string; Получить информацию о пользовательском соединении",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmgetcidattribute.htm"
+    },
+  "mGetConfUIDByName": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetConfUIDByName(sConfName: string): integer; Получить идентификатор конференции по её названию",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncconfmgetconfuidbyname.htm"
+    },
+  "mIsConfExists": {
+        "!type": "fn() -> ",
+        "!doc" : "mIsConfExists(iUID: integer): boolean; Существует ли указанная конференция",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncconfmisconfexists.htm"
+    },
+  "mClearConfWindow": {
+        "!type": "fn() -> ",
+        "!doc" : "mClearConfWindow(iUID: integer); Очистить текст в конференции всем онлайн-пользователям",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncconfmclearconfwindow.htm"
+    },
+  "mGetUsersListInGroupByName": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetUsersListInGroupByName(sGroupName: string): string; Получить список пользователей из группы",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgroupsmgetuserslistingroupbyname.htm"
+    },
+  "mGetUsersListInGroupsByNames": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetUsersListInGroupsByNames(sGroupNames: string): string; Получить список пользователей из нескольких групп",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgroupsmgetuserslistingroupsbynames.htm"
+    },
+  "UTCToLocalTime": {
+        "!type": "fn() -> ",
+        "!doc" : "UTCToLocalTime(dt: double): double; Преобразовать UTC время в локальное",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdateutctolocaltime.htm"
+    },
+  "LocalTimeToUTC": {
+        "!type": "fn() -> ",
+        "!doc" : "LocalTimeToUTC(dt: double): double; Преобразовать локальное время в UTC",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncdatelocaltimetoutc.htm"
+    },
+  "mCreateUsersGroup": {
+        "!type": "fn() -> ",
+        "!doc" : "mCreateUsersGroup(sGroupName: string): integer; Создать новую группу пользователей",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgroupsmcreateusersgroup.htm"
+    },
+  "mDeleteUsersGroup": {
+        "!type": "fn() -> ",
+        "!doc" : "mDeleteUsersGroup(sGroupName: string): integer; Удалить группу пользователей",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgroupsmdeleteusersgroup.htm"
+    },
+  "mIsUsersGroupExists": {
+        "!type": "fn() -> ",
+        "!doc" : "mIsUsersGroupExists(sGroupName: string): boolean; Существует ли указанная группа пользователей",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgroupsmisusersgroupexists.htm"
+    },
+  "mIsUserInGroup": {
+        "!type": "fn() -> ",
+        "!doc" : "mIsUserInGroup(iUIN: integer; sGroupName: string): boolean; Входит ли пользователь в указанную группу",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgroupsmisuseringroup.htm"
+    },
+  "mAddUserToGroup": {
+        "!type": "fn() -> ",
+        "!doc" : "mAddUserToGroup(iUIN: integer; sGroupName: string): integer; Добавить пользователя в указанную группу",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgroupsmaddusertogroup.htm"
+    },
+  "mRemoveUserFromGroup": {
+        "!type": "fn() -> ",
+        "!doc" : "mRemoveUserFromGroup(iUIN: integer; sGroupName: string): integer; Удалить пользователя из группы",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgroupsmremoveuserfromgroup.htm"
+    },
+  "mGetUserGroupsListAsJSON": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetUserGroupsListAsJSON(iUIN: integer): string; Получить список групп, в которых находится пользователь",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgroupsmgetusergroupslistasjson.htm"
+    },
+  "mIsUserInGroups": {
+        "!type": "fn() -> ",
+        "!doc" : "mIsUserInGroups(iUIN: integer): boolean; Находится ли пользователь хотя бы в одной из групп",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgroupsmisuseringroups.htm"
+    },
+  "mRenameUsersGroup": {
+        "!type": "fn() -> ",
+        "!doc" : "mRenameUsersGroup(sOldGroupName, sNewGroupName: string): integer; Переименовать группу пользователей",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgroupsmrenameusersgroup.htm"
+    },
+  "JSONArrayLength": {
+        "!type": "fn() -> ",
+        "!doc" : "JSONArrayLength(sJSON: string): integer; Получить количество элементов массива в формате JSON",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonarraylength.htm"
+    },
+  "JSONArrayGetString": {
+        "!type": "fn() -> ",
+        "!doc" : "JSONArrayGetString(sJSON: string; iIdx: integer; var sValue: string): integer; Получить указанный текстовый элемент из JSON массива по индексу",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonarraygetstring.htm"
+    },
+  "JSONArrayGetInteger": {
+        "!type": "fn() -> ",
+        "!doc" : "JSONArrayGetInteger(sJSON: string; iIdx: integer; var iValue: integer): integer; Получить целое число из JSON массива по индексу",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonarraygetinteger.htm"
+    },
+  "JSONArrayGetBoolean": {
+        "!type": "fn() -> ",
+        "!doc" : "JSONArrayGetBoolean(sJSON: string; iIdx: integer; var bValue: boolean): integer; Получить логическое значение элемента из JSON массива по индексу",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonarraygetboolean.htm"
+    },
+  "JSONArrayGetDateTime": {
+        "!type": "fn() -> ",
+        "!doc" : "JSONArrayGetDateTime(sJSON: string; iIdx: integer; var dtValue: double): integer; Получить значение даты и времени из JSON массива по индексу",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonarraygetdatetime.htm"
+    },
+  "JSONArraySetString": {
+        "!type": "fn() -> ",
+        "!doc" : "JSONArraySetString(var sJSON: string; iIdx: integer; sValue: string): integer; Изменить указанный текстовый элемент в JSON массиве по индексу",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonarraysetstring.htm"
+    },
+  "JSONArraySetInteger": {
+        "!type": "fn() -> ",
+        "!doc" : "JSONArraySetInteger(var sJSON: string; iIdx, iValue: integer): integer; Изменить указанный числовой элемент в JSON массиве по индексу",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonarraysetinteger.htm"
+    },
+  "JSONArraySetBoolean": {
+        "!type": "fn() -> ",
+        "!doc" : "JSONArraySetBoolean(var sJSON: string; iIdx: integer; bValue: boolean): integer; Изменить указанный булевый элемент в JSON массиве по индексу",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonarraysetboolean.htm"
+    },
+  "JSONArraySetDateTime": {
+        "!type": "fn() -> ",
+        "!doc" : "JSONArraySetDateTime(var sJSON: string; iIdx: integer; dtValue: double): integer; Изменить дату и время указанного элемента в JSON массиве по индексу",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncjsonarraysetdatetime.htm"
+    },
+  "StrToHex": {
+        "!type": "fn() -> ",
+        "!doc" : "StrToHex(sData: string): string; Преобразовать строку побайтно в шестнадцатиричное текстовое представление",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncencodingstrtohex.htm"
+    },
+  "CRC32": {
+        "!type": "fn() -> ",
+        "!doc" : "CRC32(sData: string): integer; Получить контрольную сумму CRC32 от текстовой строки",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncencodingcrc32.htm"
+    },
+  "MD5": {
+        "!type": "fn() -> ",
+        "!doc" : "MD5(sData: string): string; Получить хеш-код MD5 от текстовой строки",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncencodingmd5.htm"
+    },
+  "HMAC_MD5": {
+        "!type": "fn() -> ",
+        "!doc" : "HMAC_MD5(sData, sKey: string): string; Получить хеш-код строки на основе ключа, используя метод HMAC и алгоритм хеширования MD5",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncencodinghmacmd5.htm"
+    },
+  "SHA1": {
+        "!type": "fn() -> ",
+        "!doc" : "SHA1(sData: string): string; Получить хеш-код SHA1 от текстовой строки",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncencodingsha1.htm"
+    },
+  "HMAC_SHA1": {
+        "!type": "fn() -> ",
+        "!doc" : "HMAC_SHA1(sData, sKey: string): string; Получить хеш-код строки на основе ключа, используя метод HMAC и алгоритм хеширования SHA1",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncencodinghmacsha1.htm"
+    },
+  "EncodeBase64": {
+        "!type": "fn() -> ",
+        "!doc" : "EncodeBase64(sData: string): string; Преобразовать исходную текстовую строку в base64-представление (при помощи только 64 символов ASCII)",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncencodingencodebase64.htm"
+    },
+  "DecodeBase64": {
+        "!type": "fn() -> ",
+        "!doc" : "DecodeBase64(sData: string): string; Преобразовать текстовую строку из base64-представления в обычный текст",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncencodingdecodebase64.htm"
+    },
+  "EncodeURL": {
+        "!type": "fn() -> ",
+        "!doc" : "EncodeURL(sURL: string): string; Закодировать строку в URL-формат",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncencodingencodeurl.htm"
+    },
+  "DecodeURL": {
+        "!type": "fn() -> ",
+        "!doc" : "DecodeURL(sURL: string): string; Раскодировать строку из URL-формата в обычный текст",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncencodingdecodeurl.htm"
+    },
+  "EncodeUU": {
+        "!type": "fn() -> ",
+        "!doc" : "EncodeUU(sData: string): string; Закодировать строку в UU-формат",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncencodingencodeuu.htm"
+    },
+  "DecodeUU": {
+        "!type": "fn() -> ",
+        "!doc" : "DecodeUU(sData: string): string; Раскодировать строку из UU-формата в обычный текст",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncencodingdecodeuu.htm"
+    },
+  "mClearConsole": {
+        "!type": "fn() -> ",
+        "!doc" : "mClearConsole; Очистить текстовую консоль выполнения скриптов",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncscriptmclearconsole.htm"
+    },
+  "mHTTPSendGetMessage": {
+        "!type": "fn() -> ",
+        "!doc" : "mHTTPSendGetMessage(sURL, sHeaders: string; iTimeOut: integer): string; Выполнить HTTP GET запрос",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncnetworkmhttpsendgetmessage.htm"
+    },
+  "StrToInt64": {
+        "!type": "fn() -> ",
+        "!doc" : "StrToInt64(sSt: string): int64; Преобразовать текстовую строку в целое 64-разрядное число со знаком",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctypesconversionstrtoint64.htm"
+    },
+  "StrToInt64Def": {
+        "!type": "fn() -> ",
+        "!doc" : "StrToInt64Def(st: string; iDefaultValue: int64): int64; Преобразовать текстовую строку в целое 64-разрядное число со знаком, учитывая значение по умолчанию",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctypesconversionstrtoint64def.htm"
+    },
+  "GeoIPGetFullInfoAsJSON": {
+        "!type": "fn() -> ",
+        "!doc" : "GeoIPGetFullInfoAsJSON(sIP: string): string; Получить полную информацию об IP адресе пользователя в виде JSON объекта",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgeoipgetfullinfoasjson.htm"
+    },
+  "GeoIPGetQuickInfo": {
+        "!type": "fn() -> ",
+        "!doc" : "GeoIPGetQuickInfo(sIP: string): string; Получить строку со страной и городом пользователя по его IP адресу",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncgeoipgetquickinfo.htm"
+    },
+  "mSetUserRoleID": {
+        "!type": "fn() -> ",
+        "!doc" : "mSetUserRoleID(iUIN, iRole: integer): integer; Изменить группу прав пользователя",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncrolesmsetuserroleid.htm"
+    },
+  "mAddUserToCommonContacts": {
+        "!type": "fn() -> ",
+        "!doc" : "mAddUserToCommonContacts(iUIN, iGroupID: integer): integer; Добавить пользователя в общий древовидный список контактов",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunccontactsmaddusertocommoncontacts.htm"
+    },
+  "FileSize": {
+        "!type": "fn() -> ",
+        "!doc" : "FileSize(sFileName:string): integer; Получить размер файла на диске в байтах",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncfilesfilesize.htm"
+    },
+  "IntToKbyte": {
+        "!type": "fn() -> ",
+        "!doc" : "IntToKbyte(iValue: int64): string; Cокращённый размер файла в текстовом виде (в байтах, килобайтах, мегабайтах или гигабайтах)",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncfilesinttokbyte.htm"
+    },
+  "mMakeBackupServerDataBase": {
+        "!type": "fn() -> ",
+        "!doc" : "mMakeBackupServerDataBase(sFileNameWithPath: string): string; Создать полную резервную копию баз данных сервера в ZIP",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunccoremmakebackupserverdatabase.htm"
+    },
+  "ExtractFilePath": {
+        "!type": "fn() -> ",
+        "!doc" : "ExtractFileExt(sFileName:string): string; Получить путь к файлу из текстовой строки",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncfilesextractfilepath.htm"
+    },
+  "ExtractFileName": {
+        "!type": "fn() -> ",
+        "!doc" : "ExtractFileExt(sFileName:string): string; Получить имя файла из текстовой строки",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncfilesextractfilename.htm"
+    },
+  "ExtractFileExt": {
+        "!type": "fn() -> ",
+        "!doc" : "ExtractFileExt(sFileName:string): string; Получить расширение файла из текстовой строки",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncfilesextractfileext.htm"
+    },
+  "IntToHex": {
+        "!type": "fn() -> ",
+        "!doc" : "IntToHex(iValue: int64; iDigits: byte): string; Преобразовать целое число в шестнадцатиричное в виде строки",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctypesconversioninttohex.htm"
+    },
+  "HexToInt": {
+        "!type": "fn() -> ",
+        "!doc" : "HexToInt(sValue: string): cardinal; Преобразовать шестнадцатиричное число в виде строки в целое, десятичное",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunctypesconversionhextoint.htm"
+    },
+  "mAddUserToWebSupportGroup": {
+        "!type": "fn() -> ",
+        "!doc" : "mAddUserToWebSupportGroup(iUIN, iID: integer): integer; Добавить пользователя в группу операторов web-поддержки на сайт",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncwebsupportmaddusertowebsupportgroup.htm"
+    },
+  "mCreateWebSupportGroup": {
+        "!type": "fn() -> ",
+        "!doc" : "mCreateWebSupportGroup(sName: string): integer; Создать новую группу WEB-поддержки операторов для сайта",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncwebsupportmcreatewebsupportgroup.htm"
+    },
+  "mDeleteUserFromWebSupport": {
+        "!type": "fn() -> ",
+        "!doc" : "mDeleteUserFromWebSupport(iUIN: integer): integer; Удалить пользователя из группы WEB-поддержки операторов для сайта",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncwebsupportmdeleteuserfromwebsupport.htm"
+    },
+  "mDeleteWebSupportGroup": {
+        "!type": "fn() -> ",
+        "!doc" : "mDeleteWebSupportGroup(iID: integer): integer; Удалить группу WEB-поддержки операторов для сайта",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncwebsupportmdeletewebsupportgroup.htm"
+    },
+  "mGetUserWebSupportGroupID": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetUserWebSupportGroupID(iUIN: integer): integer; Получить идентификатор группы WEB-поддержки для указанного пользователя",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncwebsupportmgetuserwebsupportgroupid.htm"
+    },
+  "mGetWebSupportGroupIDByName": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetWebSupportGroupIDByName(sName: string): integer; Получить числовой идентификатор группы WEB-поддержки по названию",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncwebsupportmgetwebsupportgroupidbyname.htm"
+    },
+  "mGetWebSupportGroupNameByID": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetWebSupportGroupNameByID(iID: integer): string; Получить название группы операторов WEB-поддержки по её числовому идентификатору",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncwebsupportmgetwebsupportgroupnamebyid.htm"
+    },
+  "mGetWebSupportGroupUsers": {
+        "!type": "fn() -> ",
+        "!doc" : "mGetWebSupportGroupUsers(iID: integer): string; Получить список UIN-ов пользователей для указанной группы операторов WEB-поддержки",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncwebsupportmgetwebsupportgroupusers.htm"
+    },
+  "mRenameWebSupportGroup": {
+        "!type": "fn() -> ",
+        "!doc" : "mRenameWebSupportGroup(iID: integer; sNewName: string): integer; Переименовать существующую группу WEB-поддержки операторов для сайта",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncwebsupportmrenamewebsupportgroup.htm"
+    },
+  "mWebSupportGroupIDExists": {
+        "!type": "fn() -> ",
+        "!doc" : "mWebSupportGroupIDExists(iID: integer): boolean; Существует ли указанный числовой идентификатор группы WEB-поддержки",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncwebsupportmwebsupportgroupidexists.htm"
+    },
+  "mMoveUserToDepartment": {
+        "!type": "fn() -> ",
+        "!doc" : "mMoveUserToDepartment(iUIN, iGroupID: integer): integer; Перенести пользователя из одной группы общего древовидного списка контактов в другую",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunccontactsmmoveusertodepartment.htm"
+    },
+  "mCommonContactsRebuild": {
+        "!type": "fn() -> ",
+        "!doc" : "mCommonContactsRebuild; Пересобрать кеш общего списка контактов и немедленно разослать его всем онлайн-пользователям",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunccontactsmcommoncontactsrebuild.htm"
+    },
+  "mCloseAllDialogs": {
+        "!type": "fn() -> ",
+        "!doc" : "mCloseAllDialogs(bAll: boolean); Закрыть все приватные диалоги для пользователей сервера",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfunccoremclosealldialogs.htm"
+    },
+  "mKillClient": {
+        "!type": "fn() -> ",
+        "!doc" : "mKillClient(iUIN: integer): integer; Отключить от сервера пользователя с указанной учётной записью (disconnect)",
+        "!url" : "https://nsoft-s.com/mcserverhelp/index.html?scriptsfuncusersmkillclient.htm"
+    }
+}

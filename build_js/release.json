@@ -1,0 +1,99 @@
+{
+    "Release": [
+        {
+            "_clearRecursive": true
+        },
+        {
+            "node_modules": [
+                "adm-zip",
+                "electron-context-menu",
+                "electron-is-dev",
+                "electron-notify",
+                "electron-spell-check-provider",
+                "spellchecker",
+                "file-cache",
+                "gifer-console",
+                "iconv-lite",
+                "lodash",
+                "mime",
+                "modify-filename",
+                "moment",
+                "multer",
+                "node-uuid",
+                "node-pre-gyp",
+                "path-exists",
+                "send",
+                "sqlite3",
+                "unused-filename",
+	        "machine-uuid",
+	        "pupa",
+                "jsftp",
+                "request",
+                "nodeftpd",
+                "rimraf",
+                "any-promise",
+                "nan"
+            ]
+        },
+        {
+            "core":[
+                {
+                    "client": [
+                        {
+                            "source": [
+                                "css",
+                                "images",
+                                "js"
+                            ]
+                        },
+
+                        {
+                            "modules": [
+                                "electrontextsource",
+                                {
+                                    "frameworks": [
+                                        {
+                                            "webix": [
+                                                "license.txt",
+                                                {
+                                                    "codebase": [
+                                                        "css",
+                                                        "fonts",
+                                                        "legacy",
+                                                        "skins",
+                                                        "webix.css",
+                                                        "webix.js",
+                                                        "webix.js.map"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "images",
+                                {
+                                    "mctools": [
+                                        "loader.js"
+                                    ]
+                                },
+                                "smileys",
+                                "moment",
+                                "textsource",
+                                "cmd"
+                            ]
+                        },
+                        "favicon.ico",
+                        "index.html",
+                        "source.js"
+                    ]
+                },
+
+                "service",
+                "main.js"
+            ]
+        },
+        "favicon.icns",
+        "favicon.ico",
+        "package.json"
+    ]
+}
