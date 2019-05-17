@@ -1,3 +1,3 @@
-Official MyChat Messenger macOS and Linux client app
+Official MyChat Messenger client for macOS and Linux
 
-For more detailed information please check out the [our site](https://nsoft-s.com/en/index.html).
+For more detailed information please check out [our site](https://nsoft-s.com/en/index.html).
